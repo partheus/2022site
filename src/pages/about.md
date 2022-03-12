@@ -1,6 +1,7 @@
 ---
 title: "About"
 description: "This and that"
+date: 2022-03-10
 ---
 
 ## About this site
