@@ -2,7 +2,7 @@
 @use "media-queries" as *;
 
 
-$tdbc-typography-variants: h1, h2, h3, h4;
+$tdbc-typography-variants: h1, h2, h3, h4, h5;
 
 @each $type in $tdbc-typography-variants {
   #{$type},
@@ -72,7 +72,7 @@ h5,
   font-size: $tdbc-h5-font-size;
   font-weight: normal;
   @include gt-sm {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -110,6 +110,10 @@ article {
       margin-top: 4rem;
     }
   }
+}
+
+.italics {
+  font-style: italic;
 }
 
 strong {

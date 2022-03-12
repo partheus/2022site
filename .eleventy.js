@@ -11,6 +11,11 @@ const markdownItAnchor = require("markdown-it-anchor");
 // Local utilities/data
 const packageVersion = require("./package.json").version;
 
+
+const { DateTime } = require("luxon");
+
+
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(socialImages);
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -38,6 +43,10 @@ module.exports = function (eleventyConfig) {
       strict: true,
       remove: /["]/g,
     });
+  });
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
   /* Markdown Overrides */
