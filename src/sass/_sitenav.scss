@@ -42,6 +42,7 @@
 
   }
 
+
   &__container {
     justify-content: space-between;
     width: 100%;
@@ -57,7 +58,6 @@
   &__navlist {
     li + li {
       margin-left: 2rem;
-
     }
 
     li > a {
@@ -72,5 +72,13 @@
       }
     
   }
+  &__footer {
+    @include lt-sm {
+    
+      margin-left: 0;
+    }
+  }
+
+
 }
 // stylelint-enable

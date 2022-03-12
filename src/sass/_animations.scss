@@ -9,7 +9,7 @@ a {
   background-size: 1px 3px;
   color: #ededed;
   text-decoration: none;
-  transition: all ease-in-out 0.4s;
+  transition: background-size ease-in-out 0.45s;
 }
 
 a:hover {
@@ -61,19 +61,6 @@ a:hover {
 
 .slide-up {
   animation: slide-up 0.7s;
-}
-// 
-@keyframes fade-in {
-  from {
-      opacity: .25;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fade-in 0.5s;
 }
 
 
