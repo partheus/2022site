@@ -1,0 +1,24 @@
+{% set currentUrl = page.url %}
+
+<nav aria-labelledby="tdbc-siteid" class="tdbc-sitenav">
+  <div class="tdbc-sitenav__container">
+    <a id="tdbc-siteid" href="/"
+    {% if currentUrl === '/' %}aria-current="page"{% endif %}
+    ><img class="headerhome" src="{{ '/favicon-256.png' | url }}"></a>
+    <ul role="list" class="tdbc-sitenav__navlist tdbc-list-unstyled">
+      {# {% for link in collections.pages %}
+      <li>
+        <a
+          {% if currentUrl === link.url %}aria-current="page"{% endif %}
+          href="{{ link.url }}">
+            {{ link.data.title }}
+        </a>
+      </li>
+      {%- endfor %} #}
+       <li><a class="underline homeclass" href="/">Home</a></li>
+      <li><a class="underline" href="/writing">Writing</a></li>
+ <li><a class="underline" href="/art">Art</a></li>
+       <li><a class="underline" href="/about">About</a></li>
+    </ul>
+    </div>
+</nav>

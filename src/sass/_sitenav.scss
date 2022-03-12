@@ -1,0 +1,77 @@
+@use "sass:math";
+@use "theme" as *;
+@use "media-queries" as *;
+
+// stylelint-disable-next-line selector-max-id, selector-max-specificity
+#tdbc-siteid {
+  // font-size: $tdbc-h3-font-size;
+  text-decoration: none;
+}
+
+.headerhome {
+  max-width: 70px;
+  width: fit-content;
+  transition: all ease-in-out 0.3s;
+
+  @include gt-sm {
+    max-width: 100px;
+  }
+}
+
+// .headerhome:hover {
+  // transform: perspective(500px) translate3d(10px, 0, 100px);
+// }
+
+.homeclass {
+  display: inherit;
+  @include lt-sm {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+// stylelint-disable selector-max-type
+.tdbc-sitenav {
+  background-color: tdbc-color("background");
+
+  &__container,
+  &__navlist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include lt-sm {
+      li:nth-child(n+2) a  {
+margin-left: 0;
+        }
+      
+    }
+
+  }
+
+  &__container {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 150ch;
+    margin: 0 auto;
+    padding: 2rem 0.5rem;
+    
+    @include lt-sm {
+      flex-direction: column;
+    }
+  }
+
+  &__navlist {
+    li + li {
+      margin-left: 2rem;
+    }
+
+    li > a {
+      font-size: $tdbc-lead-font-size;
+      text-decoration: none;
+      font-family: "Bitter", serif;
+      letter-spacing: 0.025em;
+    }
+  }
+}
+// stylelint-enable

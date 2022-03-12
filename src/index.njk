@@ -1,0 +1,32 @@
+---
+layout: base.njk
+templateEngineOverride: md, njk
+---
+
+<header class="tdbc-hero">
+  <div class="tdbc-container slide-up hello">
+    <h1 class="tdbc-ink--primary salutation">Hi, I'm Parth Shiralkar.</h1>
+    <h4 class="tdbc-content-maxlength tdbc-ink--primary tdbc-mx-auto">
+      I'm a web developer, documentation specialist, business analyst, a few other adjectives and nouns, retired knight of the Round Table, close confidante of Merlin, freelance worldsaver, etc. etc.
+      <p></p>Welcome to my website.
+    </h4>
+  </div>
+</header>
+<main class="tdbc-container">
+  <div class="tdbc-section">
+    <ul class="tdbc-column-container">
+      {%- for page in collections.pages -%}
+      <li class="tdbc-card">
+        <div class="tdbc-card__content">
+          <a href="{{ page.url }}" class="tdbc-card__title">{{ page.data.title }}</a>
+          <p>{{ page.data.description }}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+
+{{ content | safe }}
+
+</main>

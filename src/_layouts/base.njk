@@ -1,0 +1,61 @@
+{% include 'sitenav.njk' %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+{%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="eleventy" />
+    <title>{{pageTitle}}</title>
+    <meta
+      name="description"
+      content="{{pageDescription}}"
+    />
+    <link rel="icon" href="{{ '/favicon.png' | url }}" />
+    <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
+    <meta
+      name="og:title"
+      content="{{pageTitle}}"
+    />
+    <meta
+      name="og:description"
+      content="{{pageDescription}}"
+    />
+    <meta property="og:image" content="{{pageSocialImg}}" />
+    <meta name="twitter:image" content="{{pageSocialImg}}" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for {{ meta.siteName }}"
+      href="/feed/"
+    />
+  </head>
+  <body>
+    <div class="slide-up">
+    {{ content | safe }}
+</div>
+    <footer class="tdbc-background">
+      <div class="tdbc-container tdbc-ink--light tdbc-text-align-center">
+<ul role="list" class="tdbc-sitenav__navlist tdbc-list-unstyled">
+      {# {% for link in collections.pages %}
+      <li>
+        <a
+          {% if currentUrl === link.url %}aria-current="page"{% endif %}
+          href="{{ link.url }}">
+            {{ link.data.title }}
+        </a>
+      </li>
+      {%- endfor %} #}
+      <li><a class="underline" href="/writing">Writing</a></li>
+ <li><a class="underline" href="/art">Art</a></li>
+       <li><a class="underline" href="/about">About</a></li>
+    </ul>
+      </div>
+    </footer>
+  </body>
+</html>
