@@ -166,7 +166,7 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding-left: 1.5rem;
-  border-left: 2px solid irevamp-color("secondary");
+  border-left: 4px solid crimson;
   color: irevamp-color("gray");
 
   &,
@@ -185,7 +185,14 @@ blockquote {
 
 .irevamp-lead {
   font-size: $irevamp-lead-font-size;
-  letter-spacing: 0.01em;
+  // letter-spacing: 0.01em;
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+
+.irevamp-text {
+  font-size: $irevamp-text-font-size;
+  // letter-spacing: 0.01em;
   margin-bottom: 1em;
   line-height: 1.3;
 }

@@ -11,7 +11,7 @@ $irevamp-brand-colors: (
 ) !default;
 
 $irevamp-color-body: scale-color($irevamp-color-primary, $lightness: -30%, $saturation: -50%) !default;
-$irevamp-color-gray: mix(#ffc4c4, $irevamp-color-primary, 70%) !default;
+$irevamp-color-gray: mix(rgb(170, 170, 170), $irevamp-color-body, 70%) !default;
 
 $irevamp-colors: map-merge(
   $irevamp-brand-colors,
