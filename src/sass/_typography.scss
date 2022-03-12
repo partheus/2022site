@@ -63,7 +63,7 @@ h4,
 .tdbc-h4 {
   font-size: $tdbc-h4-font-size;
   @include gt-sm {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 
@@ -72,7 +72,7 @@ h5,
   font-size: $tdbc-h5-font-size;
   font-weight: normal;
   @include gt-sm {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -122,6 +122,7 @@ strong {
 
 a:not(.tdbc-button) {
   color: $tdbc-link-color;
+  width: fit-content;
 }
 
 code:not([class*="language"]) {
