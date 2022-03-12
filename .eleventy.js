@@ -64,6 +64,7 @@ module.exports = function (eleventyConfig) {
         strict: true,
         remove: /["]/g,
       }),
+
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 

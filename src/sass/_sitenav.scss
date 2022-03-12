@@ -12,6 +12,7 @@
   max-width: 70px;
   width: fit-content;
   transition: all ease-in-out 0.3s;
+  position: relative;
 
   @include gt-sm {
     max-width: 100px;
@@ -63,8 +64,9 @@
     li > a {
       font-size: $irevamp-lead-font-size;
       text-decoration: none;
-      font-family: "Bitter", serif;
-      letter-spacing: 0.025em;
+      font-family: $irevamp-font-family-primary;
+      letter-spacing: 0;
+      font-weight: 400;
     }
 
   @include lt-sm {

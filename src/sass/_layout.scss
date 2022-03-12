@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   background-color: irevamp-color("background");
   color: $irevamp-color-primary;
-  font-family: $irevamp-font-family;
+  font-family: $irevamp-font-family-primary;
   padding: 0 1.5rem;
 
   @include gt-sm {
@@ -46,6 +46,11 @@ article {
   margin-left: auto;
   // padding: 1rem;
   text-decoration: none;
+}
+
+.irevamp-skin {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
 
 .irevamp-column-container {

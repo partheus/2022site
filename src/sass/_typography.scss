@@ -27,7 +27,18 @@ h1,
 
 .salutation {
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: $irevamp-lead-font-size;
+  font-weight: 300;
+}
+
+.intro-about {
+  margin-top: $irevamp-h3-font-size;
+  font-size: $irevamp-text-font-size;
+  font-weight: 400;
 }
 
 .hello {
@@ -122,6 +133,10 @@ strong {
 
 .bold600 {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 a:not(.irevamp-button) {
