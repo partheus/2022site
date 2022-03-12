@@ -3,7 +3,7 @@
 
 // Overall hyperlink styles
 a {
-  background: linear-gradient(to bottom, $tdbc-color-secondary 50%, $tdbc-color-secondary 80%);
+  background: linear-gradient(to bottom, $irevamp-color-secondary 50%, $irevamp-color-secondary 80%);
   background-position: 50% 100%;
   background-repeat: repeat-x;
   background-size: 1px 3px;
@@ -32,7 +32,7 @@ a:hover {
     right: 0;
     width: 0;
     height: 4px;
-    background-color: $tdbc-color-secondary;
+    background-color: $irevamp-color-secondary;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   }
   

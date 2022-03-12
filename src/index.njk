@@ -3,24 +3,24 @@ layout: base.njk
 templateEngineOverride: md, njk
 ---
 
-<header class="tdbc-hero">
-  <div class="tdbc-container slide-up hello">
-    <h1 class="tdbc-ink--primary salutation">Hi, I'm Parth Shiralkar.</h1>
-    <h5 class="tdbc-content-maxlength tdbc-ink--primary tdbc-mx-auto">
+<header class="irevamp-hero">
+  <div class="irevamp-container slide-up hello">
+    <h1 class="irevamp-ink--primary salutation">Hi, I'm Parth Shiralkar.</h1>
+    <h5 class="irevamp-content-maxlength irevamp-ink--primary irevamp-mx-auto">
       I'm a web developer, documentation specialist, business analyst, a few other adjectives and nouns, retired knight of the Round Table, close confidante of Merlin, freelance worldsaver, etc. etc.
       <p></p>Welcome to my website.
     </h5>
   </div>
 </header>
-<main class="tdbc-container">
-  <div class="tdbc-section slide-up">
-    <ul class="tdbc-column-container">
+<main class="irevamp-container">
+  <div class="irevamp-section slide-up">
+    <ul class="irevamp-column-container">
       {%- for page in collections.pages -%}
-      <li class="tdbc-card">
-        <div class="tdbc-card__content">
-          <a href="{{ page.url }}" class="tdbc-card__title bold600">{{ page.data.title }}</a>
-          <p class="tdbc-h6">{{ page.data.description }}</p>
-          <p class="tdbc-lead italics">{{ page.data.date | postDate  }}</p>
+      <li class="irevamp-card">
+        <div class="irevamp-card__content">
+          <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
+          <p class="irevamp-h6">{{ page.data.description }}</p>
+          <p class="irevamp-lead italics">{{ page.data.date | postDate  }}</p>
         </div>
       </li>
       {%- endfor -%}

@@ -54,7 +54,7 @@ module.exports = function (eleventyConfig) {
     html: true,
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.ariaHidden({
-      class: "tdbc-anchor",
+      class: "irevamp-anchor",
       space: false,
     }),
     level: [1, 2, 3, 4, 5],

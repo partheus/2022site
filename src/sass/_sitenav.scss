@@ -3,8 +3,8 @@
 @use "media-queries" as *;
 
 // stylelint-disable-next-line selector-max-id, selector-max-specificity
-#tdbc-siteid {
-  // font-size: $tdbc-h3-font-size;
+#irevamp-siteid {
+  // font-size: $irevamp-h3-font-size;
   text-decoration: none;
 }
 
@@ -31,8 +31,8 @@
 }
 
 // stylelint-disable selector-max-type
-.tdbc-sitenav {
-  background-color: tdbc-color("background");
+.irevamp-sitenav {
+  background-color: irevamp-color("background");
 
   &__container,
   &__navlist {
@@ -61,7 +61,7 @@
     }
 
     li > a {
-      font-size: $tdbc-lead-font-size;
+      font-size: $irevamp-lead-font-size;
       text-decoration: none;
       font-family: "Bitter", serif;
       letter-spacing: 0.025em;
