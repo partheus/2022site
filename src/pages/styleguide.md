@@ -1,6 +1,6 @@
 ---
 title: "Styleguide"
-description: 'Stealing hearts, fonts, love'
+description: 'A simple text styleguide for layout and UI practice'
 date: 2022-03-11
 ---
 
