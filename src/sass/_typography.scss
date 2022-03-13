@@ -45,8 +45,8 @@ h1,
   text-align: left;
   border-bottom: 1px solid #fff2e586;
   padding-bottom: 10rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 
   @include gt-md {
     padding-left: 5rem;
@@ -139,6 +139,12 @@ strong {
   text-transform: uppercase;
 }
 
+.nodecoration {
+  a, u {
+    text-decoration: none;
+  }
+}
+
 a:not(.irevamp-button) {
   color: $irevamp-link-color;
   width: fit-content;
@@ -166,7 +172,7 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding-left: 1.5rem;
-  border-left: 4px solid crimson;
+  border-left: 14px solid $irevamp-color-secondary-light;
   color: irevamp-color("gray");
 
   &,

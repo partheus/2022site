@@ -8,7 +8,7 @@ templateEngineOverride: md, njk
     <div class="intro irevamp-content-maxlength irevamp-ink--primary uppercase">household chef. developer.</div>
     <div class="intro-about irevamp-content-maxlength irevamp-ink--primary">
       
-  I'm a frontend engineer specializing in modern web applications, with industry experience in the Node.js, Ruby/Rails, and React.js ecosystems.
+  I'm a frontend engineer specializing in modern web applications, with industry experience a [variety of ecosystems]().
 
   Currently, I work as a front-end web developer in [Portland, OR](https://parth.ninja).
 
@@ -16,21 +16,21 @@ templateEngineOverride: md, njk
   </div>
 </header>
 <main class="irevamp-container">
+
   <div class="irevamp-section slide-up">
-    <h5>Posts:</h5>
+    <h5 style="margin-bottom: 0.6em;">Posts:</h5>
     <ul class="irevamp-column-container">
       {%- for page in collections.pages | reverse -%}
       <li class="irevamp-card">
         <div class="irevamp-card__content">
           <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
-          <p class="irevamp-h6">{{ page.data.description }}</p>
+          <p class="irevamp-lead">{{ page.data.description }}</p>
           <p class="irevamp-lead italics">{{ page.data.date | postDate  }}</p>
         </div>
       </li>
       {%- endfor -%}
     </ul>
   </div>
-
 
 {{ content | safe }}
 

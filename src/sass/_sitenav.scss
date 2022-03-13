@@ -15,12 +15,12 @@
   position: relative;
 
   @include gt-sm {
-    max-width: 100px;
+    max-width: 90px;
   }
 }
 
 // .headerhome:hover {
-  // transform: perspective(500px) translate3d(10px, 0, 100px);
+// transform: perspective(500px) translate3d(10px, 0, 100px);
 // }
 
 .homeclass {
@@ -40,9 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
   }
-
 
   &__container {
     justify-content: space-between;
@@ -50,7 +48,7 @@
     max-width: 150ch;
     margin: 0 auto;
     padding: 2rem 0.5rem;
-    
+
     @include lt-sm {
       flex-direction: column;
     }
@@ -69,18 +67,14 @@
       font-weight: 400;
     }
 
-  @include lt-sm {
-        margin-left: -2rem;
-      }
-    
+    @include lt-sm {
+      margin-left: -2rem;
+    }
   }
   &__footer {
     @include lt-sm {
-    
       margin-left: 0;
     }
   }
-
-
 }
 // stylelint-enable

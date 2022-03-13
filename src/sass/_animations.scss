@@ -1,69 +1,68 @@
 @use "theme" as *;
 
-
 // Overall hyperlink styles
 a {
-  background: linear-gradient(to bottom, $irevamp-color-secondary 50%, $irevamp-color-secondary 80%);
+  background: linear-gradient(
+    to bottom,
+    $irevamp-color-secondary 50%,
+    $irevamp-color-secondary 80%
+  );
   background-position: 50% 100%;
   background-repeat: repeat-x;
   background-size: 1px 3px;
   color: #ededed;
   text-decoration: none;
-  transition: background-size ease-in-out 0.45s;
+  transition: background-size ease-in-out 0.4s;
 }
 
 a:hover {
   color: $hover-font;
   background-size: 4px 50px;
+  transition: color ease-in-out 0.2s;
 }
-
 
 // Custom hover state
 
 .underline {
-    position: relative;
-    text-decoration: underline;
+  position: relative;
+  text-decoration: underline;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 0;
+  height: 4px;
+  background-color: $irevamp-color-secondary;
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
   }
-  
-  .underline::before{
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    right: 0;
-    width: 0;
-    height: 4px;
-    background-color: $irevamp-color-secondary;
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  }
-  
-  @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before{
-      left: 0;
-      right: auto;
-      width: 100%;
-    }
 }
 
 // Text/Content loading animation
 
 @keyframes slide-up {
   from {
-      
-      opacity: .25;
-      margin-top: 25px;
+    opacity: 0.5;
+    margin-top: 75px;
   }
   to {
-      
-      opacity: 1;
-      margin-top: 0;
+    opacity: 1;
+    margin-top: 0;
   }
 }
 
 .slide-up {
-  animation: slide-up 0.7s;
+  animation: slide-up 0.6s;
 }
-
-
 
 /* Waves*/
 

@@ -9,7 +9,7 @@ body {
   background-color: irevamp-color("background");
   color: $irevamp-color-primary;
   font-family: $irevamp-font-family-primary;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 
   @include gt-sm {
     padding: 0 4rem;
@@ -110,4 +110,5 @@ hr {
   margin-top: 4rem;
   margin-bottom: 4rem;
   border: 1px solid irevamp-color("secondary");
+  opacity: 0.6;
 }
