@@ -27,7 +27,7 @@ h1,
 
 .salutation {
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .intro {
@@ -36,7 +36,7 @@ h1,
 }
 
 .intro-about {
-  margin-top: $irevamp-h3-font-size;
+  margin-top: $irevamp-h2-font-size;
   font-size: $irevamp-text-font-size;
   font-weight: 400;
 }
@@ -49,8 +49,8 @@ h1,
   padding-right: 0.75rem;
 
   @include gt-md {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
   }
 }
 

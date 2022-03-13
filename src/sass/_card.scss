@@ -11,13 +11,20 @@
   // box-shadow: 0px 0px 1px 1px $irevamp-color-secondary;
   border-left: 4px solid $irevamp-color-secondary;
   transition: all ease-in-out 0.3s;
-  padding: 22px;
+  padding: 24px;
 
   &__title {
     margin-bottom: 1rem;
     font-size: $irevamp-h4-font-size;
     line-height: 2;
     text-decoration: none;
+  }
+
+  &__date {
+    font-size: $irevamp-lead-font-size;
+    line-height: 2;
+    font-style: oblique;
+    margin-top: 5px;
   }
 
   /* stylelint-disable selector-max-type, selector-no-qualifying-type */
@@ -74,7 +81,7 @@
   &:hover  {
     border-left: 4px solid $irevamp-color-primary;
     transition: all ease-in-out 0.3s;
-    background-color: $irevamp-color-background;
+    background-color: $hover-font;
   }
 
   img:first-child {

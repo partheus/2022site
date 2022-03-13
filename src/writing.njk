@@ -10,3 +10,19 @@ description: Content goes here
     <div class='wave -two'></div>
     <div class='wave -three'></div>
 </div> #}
+<div class="irevamp-container">
+  <div class="irevamp-section slide-up">
+    <h5 style="margin-bottom: 0.6em;">Posts:</h5>
+    <ul class="irevamp-column-container">
+      {%- for page in collections.pages | reverse -%}
+      <li class="irevamp-card">
+        <div class="irevamp-card__content">
+          <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
+          <p class="irevamp-lead">{{ page.data.description }}</p>
+          <p class="irevamp-card__date">{{ page.data.date | postDate  }}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  </div>
