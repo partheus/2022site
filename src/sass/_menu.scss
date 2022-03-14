@@ -33,8 +33,12 @@ $menu-font-cursive: 'Great Vibes', cursive;
     .menu-divider {
         font-family: $menu-font-cursive;
         font-weight: 400;
-        font-size: 4em;
+        font-size: 2.5em;
         text-align: center;
+
+        @include gt-sm {
+            font-size: 4em;
+        }
     }
 
     .menu-description {
@@ -121,7 +125,11 @@ $menu-font-cursive: 'Great Vibes', cursive;
 .oak {
     text-align: center;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 150px;
+    
+    @include gt-sm {
+        max-width: 200px;
+    }
 }
 
 .menu-item:hover {
