@@ -42,11 +42,11 @@ $menu-font-cursive: "Great Vibes", cursive;
     }
   }
 
-  .menu-description {
+  .menu-redirect {
     border-bottom: 1px solid transparent;
   }
 
-  .menu-description:hover {
+  .menu-redirect:hover {
     border-bottom: 1px solid $menu-color-primary;
     transition: all ease-in-out 0.2s;
   }
