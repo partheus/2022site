@@ -1,14 +1,14 @@
 ---
 layout: menucard.njk
 templateEngineOverride: md, njk
-title: "projets à la carte"
+title: "Projets à la Carte"
 subtext: mixed Edible Cuisine (indoor seating available)
 ---
 <div class="menu-collection irevamp-mx-auto">
 <div class="menu-divider">Food & Drinks</div>
-<div class="menu-item slide-up">
+<div class="menu-item">
     <div class="menu-item__about">
-        <div class="menu-item__title"><a href="/colophon">portafoglio personale</a></div>
+        <div class="menu-item__title"><a href="/">portafoglio personale</a></div>
         <div class="menu-item__description">new sourdough bread made with <u>eleventyJS, nunjucks and SASS</u>; comes with a <u>delightful lighthouse score</u> on the side</div>
     </div>
     <div class="menu-item__price">$14</div>
@@ -112,7 +112,46 @@ subtext: mixed Edible Cuisine (indoor seating available)
     <div class="menu-item__price">$1114</div>
 </div>
 
+
+<hr class="menu-hori"/>
+
+
+<div class="menu-item-row">
+
+
+<div class="menu-item-column">
+
+<div class="menu-item slide-up">
+    <div class="menu-item__about">
+        <div class="menu-item__title">water</div>
+        <div class="menu-item__description">great big gushing flowing tides</div>
+    </div>  
+    <div class="menu-item__price">$0</div>
 </div>
+</div>
+
+
+<div class="menu-item-column">
+
+<div class="menu-item slide-up">
+    <div class="menu-item__about">
+        <div class="menu-item__title"><a href="#" onclick="makeGrape()">grape (1)</a></div>
+        <div class="menu-item__description">free nutrition on the house</div>
+    </div>  
+    <div class="menu-item__price">$0</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+</div>
+</div>
+
+</div>
+
 
 
 <script>
@@ -132,5 +171,11 @@ function makeIrish() {
     event.preventDefault(); 
     var element = document.getElementById("menu");
     element.classList.toggle("guinness-mode");
+}
+
+function makeGrape() {
+    event.preventDefault(); 
+    var element = document.getElementById("menu");
+    element.classList.toggle("grape-mode");
 }
 </script>
