@@ -39,6 +39,10 @@ $irevamp-typography-variants: h1, h2, h3, h4, h5;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 
+  @include lt-sm {
+    padding: inherit 0;
+  }
+
   @include gt-md {
     padding-left: 7.5rem;
     padding-right: 7.5rem;

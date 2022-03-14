@@ -1,46 +1,21 @@
-{% include 'sitenav.njk' %}
 
 <!DOCTYPE html>
 <html lang="en">
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 {%- set pageSocialImg %}{{ meta.url }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="eleventy" />
-    <title>{{pageTitle}}</title>
-    <meta
-      name="description"
-      content="{{pageDescription}}"
-    />
-    <link rel="icon" href="{{ '/favicon.png' | url }}" />
-    <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
-    <meta
-      name="og:title"
-      content="{{pageTitle}}"
-    />
-    <meta
-      name="og:description"
-      content="{{pageDescription}}"
-    />
-    <meta property="og:image" content="{{pageSocialImg}}" />
-    <meta name="twitter:image" content="{{pageSocialImg}}" />
+{% include 'head.njk' %}
+{% include 'sitenav.njk' %}
 
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="RSS Feed for {{ meta.siteName }}"
-      href="/feed/"
-    />
-  </head>
-  <body>
+<body>
     <div>
     {{ content | safe }}
-</div>
-    <footer class="irevamp-background">
-      <div class="irevamp-sitenav__container irevamp-ink--primary irevamp-text-align-center">
-<ul role="list" class="irevamp-sitenav__navlist irevamp-sitenav__footer irevamp-list-unstyled">
+    </div>
+
+
+<footer>
+    <div class="irevamp-sitenav__container irevamp-ink--primary irevamp-text-align-center">
+    <ul role="list" class="irevamp-sitenav__navlist irevamp-sitenav__footer irevamp-list-unstyled">
       {# {% for link in collections.pages %}
       <li>
         <a
@@ -50,13 +25,14 @@
         </a>
       </li>
       {%- endfor %} #}
-      <li class="irevamp-lead irevamp-mb-none">© 2022 - Parth Shiralkar</li>
       <li><a class="underline" href="/colophon">Colophon</a></li>
-  <li><a class="underline" href="/feed">RSS</a></li>
-    <li><a class="underline" href="#">Go to top</a></li>
+      <li><a class="underline" href="/feed">RSS</a></li>
+      <li><a class="underline" href="#">Go to top</a></li>
+      <li class="irevamp-sitenav__navlist">© 2022 - Parth Shiralkar</li>
+
        {# <li><a class="underline" href="/">Home</a></li> #}
     </ul>
       </div>
     </footer>
-  </body>
+</body>
 </html>
