@@ -6,6 +6,7 @@ $menu-color-secondary: #881100;
 
 $menu-font-sans: 'Lato', sans-serif;
 $menu-font-serif: 'Libre Baskerville', sans-serif;
+$menu-font-cursive: 'Great Vibes', cursive;
 
 .menu {
     background-color: $menu-bg;
@@ -23,9 +24,16 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
     }
 
     .menu-header {
-        font-family: 'Libre Baskerville', serif;
+        font-family: $menu-font-serif;
         font-weight: 700;
         letter-spacing: 0.175em;
+        text-align: center;
+    }
+
+    .menu-divider {
+        font-family: $menu-font-cursive;
+        font-weight: 400;
+        font-size: 4em;
         text-align: center;
     }
 
@@ -48,8 +56,7 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
     }
 
     .menu-collection {
-        margin-top: 2em;
-        max-width: 130ch;
+        max-width: 100ch;
     }
 }
 
@@ -95,11 +102,13 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
         font-weight: 400;
         font-size: 1em;
         color: $menu-color-secondary;
+        text-transform: lowercase;
     }
 
     &__price {
         font-family: $menu-font-serif;
         font-weight: 700;
+        margin-top: 5px;
     }
 
     &__title:hover span {
@@ -109,8 +118,15 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
       
 }
 
+.oak {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
 .menu-item:hover {
-    .menu-item__title::after {
+    cursor: alias;
+    .menu-item__title>a::after {
         transition: content ease-in-out 0.3s;
         content: "🔗";
         color: $menu-color-secondary;
@@ -122,4 +138,10 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
     }
     filter: brightness(1.08);
     transition: all ease-in-out 0.2s;
+}
+
+.menu-hori {
+    border-color: $menu-color-secondary;
+    width: 60%;
+    margin: 1.5em auto;
 }

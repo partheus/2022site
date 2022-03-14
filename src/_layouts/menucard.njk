@@ -34,12 +34,16 @@
   </head>
   <body class="menu">
     <div class="irevamp-mx-auto menu-slide-up">
-            <h1 class="menu-header irevamp-container uppercase"><a href="#">{{ title }}</a></h1>
+            <h1 class="menu-header irevamp-container uppercase"><a href="/menu">{{ title }}</a></h1>
             {# <p class="menu-description uppercase">{{ description }}</p> #}
             <a class="menu-description" href="/"> Click here to go back home.</a>
 
             <div class="menu-section-title irevamp-mx-auto">{{ subtext }}</div>
+            <img class="oak menu-slide-up" src="{{ '/oakbranch.png' | url }}">
+
     </div>
     {{ content | safe }} 
+    <img class="oak menu-slide-up" src="{{ '/oakbranch.png' | url }}">
+
   </body>
 </html>
