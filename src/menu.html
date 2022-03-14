@@ -1,8 +1,8 @@
 ---
 layout: menucard.njk
 templateEngineOverride: md, njk
-title: "Menù Lavori"
-subtext: Edible Cuisine (indoor seating for easter eggs available)
+title: "projets à la carte"
+subtext: mixed Edible Cuisine (indoor seating available)
 ---
 <div class="menu-collection irevamp-mx-auto">
 <div class="menu-divider">Food & Drinks</div>
@@ -98,10 +98,18 @@ subtext: Edible Cuisine (indoor seating for easter eggs available)
 
 <div class="menu-item slide-up">
     <div class="menu-item__about">
+        <div class="menu-item__title"><a href="#" onclick=makeIrish()>dark island guinness</a></div>
+        <div class="menu-item__description">enchanted dry stout; served with an easter egg on the side</div>
+    </div>  
+    <div class="menu-item__price">£21</div>
+</div>
+
+<div class="menu-item slide-up">
+    <div class="menu-item__about">
         <div class="menu-item__title">Case Basse di Gianfranco Soldera Toscana IGT-Brunello di Montalcino</div>
         <div class="menu-item__description">expensive wine that i know nothing about</div>
     </div>  
-    <div class="menu-item__price">$917</div>
+    <div class="menu-item__price">$1114</div>
 </div>
 
 </div>
@@ -118,5 +126,11 @@ function makeRose() {
     event.preventDefault(); 
     var element = document.getElementById("menu");
     element.classList.toggle("rose-mode");
+}
+
+function makeIrish() {
+    event.preventDefault(); 
+    var element = document.getElementById("menu");
+    element.classList.toggle("guinness-mode");
 }
 </script>
