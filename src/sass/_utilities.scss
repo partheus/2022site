@@ -7,7 +7,7 @@
 .irevamp-anchor {
   display: inline-block;
   margin-left: 0.25em;
-  transition: 180ms opacity ease-in-out;
+  transition: 0.1s all ease-in-out;
   font-size: 0.65em;
   vertical-align: top;
 
@@ -65,4 +65,8 @@ $irevamp-alignments: left, center, right !default;
 
 .irevamp-mb-none {
   margin-bottom: 0;
+}
+
+.irevamp-pb-none {
+  padding-bottom: 0;
 }

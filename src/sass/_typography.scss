@@ -1,7 +1,6 @@
 @use "theme" as *;
 @use "media-queries" as *;
 
-
 $irevamp-typography-variants: h1, h2, h3, h4, h5;
 
 @each $type in $irevamp-typography-variants {
@@ -10,18 +9,6 @@ $irevamp-typography-variants: h1, h2, h3, h4, h5;
     font-weight: $irevamp-strong-font-weight;
     line-height: 1.1;
     margin-bottom: 0.2em;
-  }
-}
-
-// As of v0.3.0, `clamp` not well enough supported on mobile browsers for use
-// Due to build-in min/max Sass functions, requires `unquote()` to correctly
-// render as CSS min/max
-h1,
-.irevamp-h1 {
-  font-size: $irevamp-h1-font-size;
-  // font-size: unquote("min(max(3rem, 5vw), #{$irevamp-h1-font-size})");
-  @include gt-sm {
-    font-size: 72px;
   }
 }
 
@@ -37,8 +24,12 @@ h1,
 
 .intro-about {
   margin-top: $irevamp-h2-font-size;
-  font-size: $irevamp-text-font-size;
+  font-size: 16px;
   font-weight: 400;
+
+  @include gt-sm {
+    font-size: 18px;
+  }
 }
 
 .hello {
@@ -54,11 +45,25 @@ h1,
   }
 }
 
+// As of v0.3.0, `clamp` not well enough supported on mobile browsers for use
+// Due to build-in min/max Sass functions, requires `unquote()` to correctly
+// render as CSS min/max
+
+// Headers and such
+h1,
+.irevamp-h1 {
+  font-size: $irevamp-h1-font-size;
+  // font-size: unquote("min(max(3rem, 5vw), #{$irevamp-h1-font-size})");
+  @include gt-sm {
+    font-size: 68px;
+  }
+}
+
 h2,
 .irevamp-h2 {
   font-size: $irevamp-h2-font-size;
   @include gt-sm {
-    font-size: 62px;
+    font-size: 58px;
   }
 }
 
@@ -66,7 +71,7 @@ h3,
 .irevamp-h3 {
   font-size: $irevamp-h3-font-size;
   @include gt-sm {
-    font-size: 52px;
+    font-size: 50px;
   }
 }
 
@@ -74,7 +79,7 @@ h4,
 .irevamp-h4 {
   font-size: $irevamp-h4-font-size;
   @include gt-sm {
-    font-size: 40px;
+    font-size: 42px;
   }
 }
 
@@ -89,7 +94,11 @@ h5,
 
 p,
 li {
-  font-size: $irevamp-text-font-size;
+  font-size: $irevamp-lead-font-size;
+
+  @include gt-sm {
+    font-size: $irevamp-text-font-size;
+  }
 }
 
 p {
@@ -140,7 +149,8 @@ strong {
 }
 
 .nodecoration {
-  a, u {
+  a,
+  u {
     text-decoration: none;
   }
 }

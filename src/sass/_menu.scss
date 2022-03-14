@@ -1,0 +1,120 @@
+$menu-bg: #f8f0ce;
+$menu-color-primary: #122f54;
+$menu-color-secondary: #881100;
+
+$menu-font-sans: 'Lato', sans-serif;
+$menu-font-serif: 'Libre Baskerville', sans-serif;
+
+.menu {
+    background-color: $menu-bg;
+    transition: all ease-in-out 0.2s;
+    color: $menu-color-primary;
+
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    a {
+        color: $menu-color-primary;
+        text-decoration: none;
+        border: none;
+        background: none;
+    }
+
+    .menu-header {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        letter-spacing: 0.175em;
+    }
+
+    .menu-description {
+        border-bottom: 1px solid transparent;
+    }
+
+    .menu-description:hover {
+        border-bottom: 1px solid $menu-color-primary;
+        transition: all ease-in-out 0.2s;
+    }
+
+    .menu-section-title {
+        font-family: $menu-font-sans;
+        font-weight: 400;
+        color: $menu-color-secondary;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    .menu-collection {
+        margin-top: 2em;
+        max-width: 130ch;
+    }
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    // border: #881100 1px solid;
+    padding: 1.25em 1.5em;
+    border-radius: 10px;
+    margin: 0.5em auto;
+    justify-content: space-between;
+    background-color: $menu-bg;
+    filter: brightness(1);
+    transition: all ease-in-out 0.2s;
+    width: 100%;
+
+    u {
+        text-decoration: none;
+        border-bottom: none;
+        transition: all ease-in-out 0.1s;
+    }
+
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    &__title {
+        font-family: $menu-font-sans;
+        text-transform: uppercase;
+        letter-spacing: 0.175em;
+        font-weight: 700;
+        font-size: 1.4em;
+    }
+
+    &__description {
+        font-family: $menu-font-serif;
+        font-weight: 400;
+        font-size: 1em;
+        color: $menu-color-secondary;
+    }
+
+    &__price {
+        font-family: $menu-font-serif;
+        font-weight: 700;
+    }
+
+    &__title:hover span {
+        display: none;
+        transition: all ease-in-out 0.3s;
+      }
+      
+      &__title:hover::after {
+        transition: content ease-in-out 0.3s;
+        content: "🔗";
+        color: $menu-color-secondary;
+        display: inline-block;
+      }
+}
+
+.menu-item:hover {
+
+    u {
+        border-bottom: 2px dashed $menu-color-secondary;
+    }
+    filter: brightness(1.08);
+    transition: all ease-in-out 0.2s;
+}

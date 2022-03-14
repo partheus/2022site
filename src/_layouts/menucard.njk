@@ -1,5 +1,3 @@
-{% include 'sitenav.njk' %}
-
 <!DOCTYPE html>
 <html lang="en">
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
@@ -34,29 +32,14 @@
       href="/feed/"
     />
   </head>
-  <body>
-    <div>
-    {{ content | safe }}
-</div>
-    <footer class="irevamp-background">
-      <div class="irevamp-sitenav__container irevamp-ink--primary irevamp-text-align-center">
-<ul role="list" class="irevamp-sitenav__navlist irevamp-sitenav__footer irevamp-list-unstyled">
-      {# {% for link in collections.pages %}
-      <li>
-        <a
-          {% if currentUrl === link.url %}aria-current="page"{% endif %}
-          href="{{ link.url }}">
-            {{ link.data.title }}
-        </a>
-      </li>
-      {%- endfor %} #}
-      <li class="irevamp-lead irevamp-mb-none">© 2022 - Parth Shiralkar</li>
-      <li><a class="underline" href="/colophon">Colophon</a></li>
-  <li><a class="underline" href="/feed">RSS</a></li>
-    <li><a class="underline" href="#">Go to top</a></li>
-       {# <li><a class="underline" href="/">Home</a></li> #}
-    </ul>
-      </div>
-    </footer>
+  <body class="menu">
+    <div class="irevamp-mx-auto menu-slide-up">
+            <h1 class="menu-header irevamp-container uppercase"><a href="#">{{ title }}</a></h1>
+            {# <p class="menu-description uppercase">{{ description }}</p> #}
+            <a class="menu-description" href="/"> Click here to go back home.</a>
+
+            <div class="menu-section-title irevamp-mx-auto">{{ subtext }}</div>
+    </div>
+    {{ content | safe }} 
   </body>
 </html>
