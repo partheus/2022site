@@ -1,3 +1,5 @@
+@use "media-queries" as *;
+
 $menu-bg: #f8f0ce;
 $menu-color-primary: #122f54;
 $menu-color-secondary: #881100;
@@ -9,7 +11,6 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
     background-color: $menu-bg;
     transition: all ease-in-out 0.2s;
     color: $menu-color-primary;
-
 
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -25,6 +26,7 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
         font-family: 'Libre Baskerville', serif;
         font-weight: 700;
         letter-spacing: 0.175em;
+        text-align: center;
     }
 
     .menu-description {
@@ -54,8 +56,7 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
 .menu-item {
     display: flex;
     flex-direction: row;
-    // border: #881100 1px solid;
-    padding: 1.25em 1.5em;
+    padding: 1.25em 1em;
     border-radius: 10px;
     margin: 0.5em auto;
     justify-content: space-between;
@@ -63,6 +64,10 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
     filter: brightness(1);
     transition: all ease-in-out 0.2s;
     width: 100%;
+
+    @include gt-sm {
+        padding: 1.25em 1.5em;
+    }
 
     u {
         text-decoration: none;
@@ -102,15 +107,15 @@ $menu-font-serif: 'Libre Baskerville', sans-serif;
         transition: all ease-in-out 0.3s;
       }
       
-      &__title:hover::after {
+}
+
+.menu-item:hover {
+    .menu-item__title::after {
         transition: content ease-in-out 0.3s;
         content: "🔗";
         color: $menu-color-secondary;
         display: inline-block;
       }
-}
-
-.menu-item:hover {
 
     u {
         border-bottom: 2px dashed $menu-color-secondary;
