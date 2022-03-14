@@ -26,7 +26,7 @@ $menu-font-cursive: 'Great Vibes', cursive;
     .menu-header {
         font-family: $menu-font-serif;
         font-weight: 700;
-        letter-spacing: 0.175em;
+        letter-spacing: 0.15em;
         text-align: center;
     }
 
@@ -107,7 +107,6 @@ $menu-font-cursive: 'Great Vibes', cursive;
         font-weight: 400;
         font-size: 1em;
         color: $menu-color-secondary;
-        text-transform: lowercase;
     }
 
     &__price {

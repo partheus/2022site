@@ -72,8 +72,9 @@
     }
   }
   &__footer {
-
+    
     @include lt-sm {
+      line-height: 2;
       margin-left: 0;
     }
   }
