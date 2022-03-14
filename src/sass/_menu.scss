@@ -120,7 +120,7 @@ $menu-font-cursive: "Great Vibes", cursive;
 .menu-item {
   display: flex;
   flex-direction: row;
-  padding: 1.25em 1em;
+  padding: 1.25em 0.75em;
   border-radius: 9px;
   margin: 0.5em auto;
   justify-content: space-between;
@@ -142,7 +142,7 @@ $menu-font-cursive: "Great Vibes", cursive;
   &__about {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   &__title {
