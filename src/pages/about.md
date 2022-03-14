@@ -7,9 +7,7 @@ I'm a web developer, documentation specialist, business analyst, a few other adj
 
 Welcome to my website.
 
-About this site
-
-Hehe hehe hehe
+Hehe TEXT CONTENT
 
 ##### This is my website.
 > There are many like it,
