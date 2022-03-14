@@ -113,7 +113,7 @@ $menu-font-cursive: "Great Vibes", cursive;
   }
 
   .menu-section-title {
-    color: #B8B8FF;
+    color: #b8b8ff;
   }
 }
 
@@ -121,7 +121,7 @@ $menu-font-cursive: "Great Vibes", cursive;
   display: flex;
   flex-direction: row;
   padding: 1.25em 1em;
-  border-radius: 8px;
+  border-radius: 9px;
   margin: 0.5em auto;
   justify-content: space-between;
   background-color: $menu-bg;
@@ -186,16 +186,17 @@ $menu-font-cursive: "Great Vibes", cursive;
 
 .menu-item:hover {
   cursor: alias;
+
   .menu-item__title > a::after {
     transition: all ease-in-out 0.3s;
     content: "🔗";
-    // color: $menu-color-secondary;
     display: inline-block;
   }
 
   u {
     border-bottom: 2px dashed $menu-color-secondary;
   }
+
   filter: brightness(1.09);
   transition: all ease-in-out 0.3s;
 }
