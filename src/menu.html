@@ -2,15 +2,14 @@
 layout: menucard.njk
 templateEngineOverride: md, njk
 title: "Menù Lavori"
-description: "A collection of my works."
-subtext: Edible Cuisine (indoor seating)
+subtext: Edible Cuisine (indoor seating for easter eggs available)
 ---
 <div class="menu-collection irevamp-mx-auto">
 <div class="menu-divider">Food & Drinks</div>
 <div class="menu-item slide-up">
     <div class="menu-item__about">
         <div class="menu-item__title"><a href="/colophon">portafoglio personale</a></div>
-        <div class="menu-item__description">sourdough bread made with <u>eleventyJS, nunjucks and SASS</u>; comes with a <u>delightful lighthouse score</u></div>
+        <div class="menu-item__description">sourdough bread made with <u>eleventyJS, nunjucks and SASS</u>; comes with a <u>delightful lighthouse score</u> on the side</div>
     </div>
     <div class="menu-item__price">$14</div>
 </div>
@@ -34,7 +33,7 @@ subtext: Edible Cuisine (indoor seating)
 <div class="menu-item slide-up">
     <div class="menu-item__about">
         <div class="menu-item__title"><a href="https://tofu.wiki/">wiki del tofu</a></div>
-        <div class="menu-item__description">a fresh, quick tofu guide put together using a bit of <u>golang and hugo</u>; lightning fast digestion with <u>accessibility and rapid loading</u></div>
+        <div class="menu-item__description">a fresh, quick tofu guide put together using a bit of <u>golang and hugo</u>; offers lightning fast digestion with <u>accessibility and rapid loading</u></div>
     </div>
 <div class="menu-item__price">$18</div>
 </div>
@@ -42,7 +41,7 @@ subtext: Edible Cuisine (indoor seating)
 <div class="menu-item slide-up">
     <div class="menu-item__about">
         <div class="menu-item__title"><a href="https://rallyhealth.com">modifiche del sito</a></div>
-        <div class="menu-item__description">site updates for the rally health website using <u>craftCMS and twig templating</u>, made from fresh tomatoes</div>
+        <div class="menu-item__description">site updates for the rally health website using <u>craftCMS and twig templating</u>, made from ripe tomatoes</div>
     </div>
     <div class="menu-item__price">$13</div>
 </div>
@@ -50,9 +49,17 @@ subtext: Edible Cuisine (indoor seating)
 <div class="menu-item slide-up">
     <div class="menu-item__about">
         <div class="menu-item__title"><a href="https://eleventy-barebones-starter.netlify.app/">boilerplate sito web</a></div>
-        <div class="menu-item__description">tossed templating soup using <u>eleventyJS, nunjucks, HTML and CSS</u></div>
+        <div class="menu-item__description">tossed templating soup using <u>eleventyJS, nunjucks, HTML and CSS</u>; with <u>pagination</u> and croutons</div>
     </div>
     <div class="menu-item__price">$13</div>
+</div>
+
+<div class="menu-item slide-up">
+    <div class="menu-item__about">
+        <div class="menu-item__title"><a href="#" onclick=makePista()>stregoneria al pistacchio</a></div>
+        <div class="menu-item__description">magic spell concocted from <u>fresh pistachio nuts and ice cream</u>; this item <u><i>toggles on click</i></u></div>
+    </div>
+    <div class="menu-item__price">$42</div>
 </div>
 
 <div class="menu-item slide-up">
@@ -60,10 +67,18 @@ subtext: Edible Cuisine (indoor seating)
         <div class="menu-item__title"><a href="https://jsonderulo.ga/">json derulo guida</a></div>
         <div class="menu-item__description">fun little dessert site explaining what JSON is; using <u>eleventyJS</u></div>
     </div>
-    <div class="menu-item__price">$13</div>
+    <div class="menu-item__price">$17</div>
 </div>
 
 <hr class="menu-hori"/>
+
+<div class="menu-item slide-up">
+    <div class="menu-item__about">
+        <div class="menu-item__title"><a href="#" onclick=makeRose()>Rosé</a></div>
+        <div class="menu-item__description">expensive wine that i know nothing about; this item also <u><i>toggles on click</i></u></div>
+    </div>  
+    <div class="menu-item__price">$42</div>
+</div>
 
 <div class="menu-item slide-up">
     <div class="menu-item__about">
@@ -88,4 +103,20 @@ subtext: Edible Cuisine (indoor seating)
     </div>  
     <div class="menu-item__price">$917</div>
 </div>
+
 </div>
+
+
+<script>
+function makePista() {
+    event.preventDefault(); 
+    var element = document.getElementById("menu");
+    element.classList.toggle("pista-mode");
+}
+
+function makeRose() {
+    event.preventDefault(); 
+    var element = document.getElementById("menu");
+    element.classList.toggle("rose-mode");
+}
+</script>
