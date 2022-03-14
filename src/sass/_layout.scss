@@ -83,8 +83,13 @@ ul.irevamp-column-container {
   min-height: 32vh;
   place-content: center;
   padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh;
   text-align: center;
+
+  @include gt-sm {
+    padding-top: 5vh;
+  padding-bottom: 5vh;
+  }
 }
 
 .irevamp-row {

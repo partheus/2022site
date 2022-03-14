@@ -58,7 +58,12 @@ h1,
 .irevamp-h1 {
   font-size: $irevamp-h1-font-size;
   // font-size: unquote("min(max(3rem, 5vw), #{$irevamp-h1-font-size})");
+
   @include gt-sm {
+    font-size: 58px;
+  }
+
+  @include gt-md {
     font-size: 68px;
   }
 }
@@ -66,7 +71,12 @@ h1,
 h2,
 .irevamp-h2 {
   font-size: $irevamp-h2-font-size;
+
   @include gt-sm {
+    font-size: 48px;
+  }
+
+  @include gt-md {
     font-size: 58px;
   }
 }
@@ -74,7 +84,11 @@ h2,
 h3,
 .irevamp-h3 {
   font-size: $irevamp-h3-font-size;
+
   @include gt-sm {
+    font-size: 42px;
+  }
+  @include gt-md {
     font-size: 50px;
   }
 }
@@ -83,6 +97,9 @@ h4,
 .irevamp-h4 {
   font-size: $irevamp-h4-font-size;
   @include gt-sm {
+    font-size: 38px;
+  }
+  @include gt-md {
     font-size: 42px;
   }
 }
@@ -92,15 +109,22 @@ h5,
   font-size: $irevamp-h5-font-size;
   font-weight: normal;
   @include gt-sm {
+    font-size: 33px;
+  }
+  @include gt-md {
     font-size: 36px;
   }
 }
 
 p,
 li {
-  font-size: $irevamp-lead-font-size;
-
+  font-size: $irevamp-mini-font-size;
+  
   @include gt-sm {
+    font-size: $irevamp-lead-font-size;
+  }
+
+  @include gt-md {
     font-size: $irevamp-text-font-size;
   }
 }
@@ -218,7 +242,7 @@ blockquote {
 }
 
 .irevamp-description {
-  font-size: 1em;
+  font-size: 1.1em;
   color: $irevamp-color-secondary;
 }
 
