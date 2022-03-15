@@ -9,6 +9,7 @@ $hover-font: #25021d !default;
 $irevamp-brand-colors: (
   "primary": $irevamp-color-primary,
   "secondary": $irevamp-color-secondary,
+  "secondary-light": $irevamp-color-secondary-light,
 ) !default;
 
 $irevamp-color-body: scale-color($irevamp-color-primary, $lightness: -30%, $saturation: -50%) !default;
@@ -30,7 +31,7 @@ $irevamp-colors: map-merge(
 }
 
 // Add/remove to selectively generate `ink` (text color) classes
-$irevamp-ink-colors: "primary", "secondary", "text", "gray", "light", "dark" !default;
+$irevamp-ink-colors: "primary", "secondary", "secondary-light", "text", "gray", "light", "dark" !default;
 
 // Add/remove to selectively generate `background` (text color) classes
 $irevamp-background-colors: "primary", "secondary", "background", "gray", "light" !default;

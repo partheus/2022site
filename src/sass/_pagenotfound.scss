@@ -1,0 +1,86 @@
+@use "theme" as *;
+@use "media-queries" as *;
+
+.pagenotfound {
+  background-color: #280808;
+  transition: all ease-in-out 0.2s;
+  max-height: 100vh;
+
+  padding: 15vh 2vh;
+  border-radius: 9px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.72);
+  .pagenotfound-container {
+    text-align: center;
+  }
+
+  @include gt-md {
+    padding: 15vh 6vh;
+  }
+}
+
+.pagenotfound:hover {
+  background-color: #29081c;
+  transition: all ease-in-out 0.2s;
+}
+
+.cloud {
+  position: relative;
+  display: block;
+  padding-left: 1em;
+  width: 6em;
+  height: 6em;
+  margin: 0.5em auto;
+  color: $irevamp-color-secondary;
+  background: $irevamp-color-primary;
+  border-width: 0.25em;
+  border-style: solid;
+  border-radius: 50% 50% 0 0;
+  transition: all ease-in-out 0.2s;
+
+  @include gt-sm {
+    width: 9em;
+    height: 9em;
+  }
+
+  @include gt-md {
+    width: 12em;
+    height: 12em;
+  }
+}
+
+.cloud:before,
+.cloud:after {
+  content: "";
+  position: absolute;
+  bottom: -0.25em;
+  background: inherit;
+  border-width: 0.25em;
+  border-style: solid;
+}
+
+.cloud:before {
+  left: 90%;
+  width: 60%;
+  height: 60%;
+  border-left: none;
+  border-radius: 50% 50% 50% 0;
+}
+
+.cloud:after {
+  right: 70%;
+  width: 80%;
+  height: 80%;
+  border-right: none;
+  border-radius: 50% 50% 0;
+}
+
+.cloud:hover {
+  cursor: progress;
+  .cloud::after,
+  .cloud:before {
+    border-style: dotted;
+  }
+  color: $irevamp-color-primary;
+  background: $irevamp-color-secondary;
+  transition: all ease-in-out 0.2s;
+}
