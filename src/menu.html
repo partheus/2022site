@@ -16,7 +16,7 @@ subtext: mixed Edible Cuisine (indoor seating available)
 
 <div class="menu-item-column">
 <div class="slide-up irevamp-mx-auto">
-    <div class="glossary irevamp-lead">
+    <div class="glossary">
         🌱 - Featured Projects
     </div>  
 </div>
@@ -24,7 +24,7 @@ subtext: mixed Edible Cuisine (indoor seating available)
 
 <div class="menu-item-column">
 <div class="slide-up">
-    <div class="glossary irevamp-lead">
+    <div class="glossary">
         🔗 - Hyperlinks
     </div>  
 </div>
@@ -48,6 +48,14 @@ subtext: mixed Edible Cuisine (indoor seating available)
         <div class="menu-item__description"><u>frontend development salad</u> for cana website launch; prepared using <u>HTML, CSS, javascript, twig, and craftCMS</u></div>
     </div>  
     <div class="menu-item__price menu-item__price-project" target="_blank">$17</div>
+</div>
+
+<div class="menu-item slide-up">
+    <div class="menu-item__about">
+        <div class="menu-item__title"><a href="#" onclick=makePeach()>trasformazione della pesca</a></div>
+        <div class="menu-item__description">delicious peach sorbet, put together with <u>mythical artefacts</u> and the <u>odd toggle effect</u></div>
+    </div>  
+    <div class="menu-item__price" target="_blank">$11</div>
 </div>
 
 <div class="menu-item slide-up">
@@ -202,5 +210,11 @@ function makeGrape() {
     event.preventDefault(); 
     var element = document.getElementById("menu");
     element.classList.toggle("grape-mode");
+}
+
+function makePeach() {
+    event.preventDefault(); 
+    var element = document.getElementById("menu");
+    element.classList.toggle("peach-mode");
 }
 </script>

@@ -9,14 +9,10 @@
 }
 
 .headerhome {
-  max-width: 70px;
+  max-width: 45px;
   width: fit-content;
   transition: all ease-in-out 0.3s;
   position: relative;
-
-  @include gt-sm {
-    max-width: 90px;
-  }
 }
 
 // .headerhome:hover {
@@ -47,29 +43,35 @@
     width: 100%;
     max-width: 150ch;
     margin: 0 auto;
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
+    flex-direction: row;
+    align-items: center;
 
-    @include lt-sm {
-      flex-direction: column;
-      align-items: flex-start;
+    @include gt-sm {
+      padding: 2rem 0.5rem;
     }
   }
 
   &__navlist {
     li + li {
       margin-left: 2rem;
+
+      @include lt-sm {
+        margin-left: 1.5rem;
+      }
+    
     }
 
     li > a {
-      font-size: $irevamp-lead-font-size;
+      font-size: $irevamp-mini-font-size;
       text-decoration: none;
       font-family: $irevamp-font-family-primary;
       letter-spacing: 0;
       font-weight: 400;
-    }
 
-    @include lt-sm {
-      margin-left: -2rem;
+      @include gt-sm {
+        font-size: $irevamp-lead-font-size;
+      }
     }
   }
   &__footer {

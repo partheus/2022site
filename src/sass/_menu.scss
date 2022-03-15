@@ -56,6 +56,7 @@ $menu-font-cursive: "Great Vibes", cursive;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.03em;
+    font-size: 1rem;
 
     @include gt-xs {
       margin-top: 1em;
@@ -146,6 +147,18 @@ $menu-font-cursive: "Great Vibes", cursive;
 
   .menu-item {
     background-color: #ced4fd;
+  }
+
+  .menu-item:hover {
+    filter: brightness(1.08);
+  }
+}
+
+.peach-mode {
+  background-color: #ffd2c1;
+
+  .menu-item {
+    background-color: #ffd2c1;
   }
 
   .menu-item:hover {
