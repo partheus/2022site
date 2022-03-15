@@ -3,7 +3,7 @@ layout: bones.njk
 permalink: 404.html
 title: 'Error 404'
 ---
-<div class="pagenotfound slide-up">
+<div class="pagenotfound">
    
     <div class="pagenotfound-container slide-up">
         <div class="irevamp-h5 notfound-h5 uppercase bold600" style="margin-bottom: 0">Whoops... <span class="irevamp-ink--secondary-light ">That's an error.</span></div>
@@ -15,7 +15,9 @@ title: 'Error 404'
         {# <div class="irevamp-h5 salutation uppercase bold600" style="margin: 3em ">X rarely ever marks the spot,</div> #}
         {# <div class="intro-about" style="margin: 0em 0 3em;">and it looks like we're missing a link here. Let's get you sorted:</div> #}
         {# <a href="#" onclick="history.back()" class="intro bold600 uppercase">Go back ⮌</a> #}
-        <button onclick="history.back()" class="intro bold600 uppercase pagenotfound-button" style="margin-top: 2.5em">Go back <span>&#11148;</span></button>
+        <div class="irevamp-lead notfound-lead irevamp-ink--primary" style="margin: 2em auto 0">Click <span class="irevamp-ink--primary bold600"><a href="/">here</a></span> to go to the main homepage. Or, perhaps, if you'd like to resume your quest for treasure...</div>
+
+        <button onclick="history.back()" class="intro-about bold600 uppercase pagenotfound-button" style="">Go back</button>
     </div>
 
 </div>

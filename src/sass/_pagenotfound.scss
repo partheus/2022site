@@ -88,22 +88,14 @@
 }
 
 .crane {
-  max-width: 80%;
+  max-width: 100%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   transition: all 1s ease;
   filter: hue-rotate(0);
 
-  @include xs {
-    width: 70%;
-  }
-
-  @include gt-xs {
-    max-width: 45%;
-  }
-
   @include gt-sm {
-    max-width: 65%;
+    padding: 6vh;
   }
 }
 
@@ -127,6 +119,12 @@
   border-radius: 35px;
   padding: 5px 19px;
   transition: all ease-in-out 0.2s;
+  margin-top: 1em;
+
+  @include gt-sm {
+    margin-top: 1.75em;
+  }
+
 }
 
 .pagenotfound-button:hover {
