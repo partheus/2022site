@@ -2,20 +2,17 @@
 @use "media-queries" as *;
 
 .pagenotfound {
-  background-color: #280808;
   transition: all ease-in-out 0.2s;
-  max-height: 100vh;
 
-  padding: 4vh 1vh;
+  padding: 6vh 1vh;
   border-radius: 9px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.72);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
   .pagenotfound-container {
     text-align: center;
   }
 
   @include xs {
-    
-    padding: 4vh 2vh;
+    padding: 4vh 0;
   }
 
   @include gt-sm {
@@ -24,7 +21,7 @@
 }
 
 .pagenotfound:hover {
-  background-color: #29081c;
+  background-color: #1d0606;
   transition: all ease-in-out 0.2s;
 }
 
