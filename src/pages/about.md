@@ -9,8 +9,11 @@ Welcome to my website.
 
 Hehe TEXT CONTENT
 
+{% include 'goodreads.html' %}
+
 ##### This is my website.
 > There are many like it,
 ##### BUT
 > This one is mine.
+
 
