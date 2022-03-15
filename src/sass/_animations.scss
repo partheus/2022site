@@ -81,6 +81,32 @@ a:hover {
   animation: menu-slide-up 0.8s;
 }
 
+//  background clip
+
+.backlit {
+  background: url(/backlit.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: backlitanim 45s linear infinite;
+    animation: backlitanim 45s linear infinite;
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+@keyframes backlitanim {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
 /* Waves*/
 
 .box {
