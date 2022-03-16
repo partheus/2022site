@@ -17,7 +17,7 @@ a {
 
 a:hover {
   color: $hover-font;
-  background-size: 4px 50px;  
+  background-size: 4px 50px;
   transition: all ease-in-out 0.4s;
   transition: background-size ease-in-out 0.3s;
 }
@@ -65,7 +65,6 @@ a:hover {
   animation: slide-up 0.8s;
 }
 
-
 @keyframes menu-slide-up {
   from {
     opacity: 0.5;
@@ -81,30 +80,65 @@ a:hover {
   animation: menu-slide-up 0.8s;
 }
 
+// slide in
+
+.slide-in-left {
+  opacity: 0.5;
+  position: relative;
+  left: -600px;
+  animation: slide-in-left 1s forwards;
+}
+
+@keyframes slide-in-left {
+  100% {
+    left: 0;
+    opacity: 1;
+    position: relative;
+  }
+}
+
+.slide-in-right {
+  opacity: 0.5;
+  position: relative;
+  right: -600px;
+  animation: slide-in-right 1s forwards;
+}
+
+@keyframes slide-in-right {
+  100% {
+    right: 0;
+    opacity: 1;
+    position: relative;
+  }
+}
+
 //  background clip
 
 .backlit {
   background: url(/img/backlit.png) repeat-y;
-	  -webkit-background-clip: text;
-	  background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
 
-/* Animate Background Image */
+  /* Animate Background Image */
 
-	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: backlitanim 45s linear infinite;
-    animation: backlitanim 45s linear infinite;
-/* Activate hardware acceleration for smoother animations */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: backlitanim 45s linear infinite;
+  animation: backlitanim 45s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
 
-	  -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @keyframes backlitanim {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Waves*/
