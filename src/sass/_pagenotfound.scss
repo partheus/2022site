@@ -13,7 +13,7 @@
     text-align: center;
   }
 
-  @include gt-sm {
+  @include gt-md {
     padding-top: 6vh;
   }
 }
