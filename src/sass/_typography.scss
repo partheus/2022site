@@ -263,5 +263,9 @@ blockquote {
 
 .irevamp-postlist__content {
   text-align: left;
-  margin: 2em auto;
+  margin: 1rem auto;
+  
+  .irevamp-text {
+    font-size: 1.25;
+  }
 }

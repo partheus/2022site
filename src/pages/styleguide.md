@@ -70,9 +70,9 @@ var fun = function lang(l) {
   - level 2 item
 - level 1 item
 
-
+<br>
 <div class="irevamp-section slide-up">
-    <h5 style="margin-bottom: 0.6em;">Test Cards:</h5>
+    <h5>Test 3-Up Cards:</h5>
     <ul class="irevamp-column-container">
       {%- for page in collections.pages | reverse -%}
       <li class="irevamp-card">
