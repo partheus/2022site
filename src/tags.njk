@@ -7,8 +7,11 @@ pagination:
   filter:
     - all
 permalink: /tags/{{ tag }}/
+title: Tagged content
 ---
-<p class="irevamp-lead">Here are all articles tagged “{{ tag }}.” </p>
+<div class="irevamp-hero">
+  <div class="irevamp-section slide-up">
+    <h3 style="margin-bottom: 0.6em;" class="">Here are all articles tagged “{{ tag }}.” :</h3>
 <ul>
     {% set taglist = collections[tag] | reverse %}
     {% for post in taglist %}
@@ -32,3 +35,7 @@ permalink: /tags/{{ tag }}/
         </li>
     {% endfor %}
 </ul>
+
+  </div>
+</div>
+
