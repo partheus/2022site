@@ -4,7 +4,6 @@
 
 // stylelint-disable-next-line selector-max-id, selector-max-specificity
 #irevamp-siteid {
-  // font-size: $irevamp-h3-font-size;
   text-decoration: none;
 }
 
@@ -30,14 +29,11 @@
 }
 
 .headerhome:hover {
-  // transform: perspective(500px) translate3d(10px, 0, 100px);
-  // transform: perspective(500px) translate3d(5px, 0, 15px);
   transition: all 0.2s ease-in-out;
   filter: hue-rotate(222deg);
 }
 
 .homeclass {
-  display: inherit;
   @include lt-sm {
     display: none;
     visibility: hidden;
