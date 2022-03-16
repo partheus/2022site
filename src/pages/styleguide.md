@@ -69,3 +69,19 @@ var fun = function lang(l) {
   - level 2 item
   - level 2 item
 - level 1 item
+
+
+<div class="irevamp-section slide-up">
+    <h5 style="margin-bottom: 0.6em;">Test Cards:</h5>
+    <ul class="irevamp-column-container">
+      {%- for page in collections.pages | reverse -%}
+      <li class="irevamp-card">
+        <div class="irevamp-card__content">
+          <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
+          <p class="irevamp-lead">{{ page.data.description }}</p>
+          <p class="irevamp-card__date">{{ page.data.date | postDate  }}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+</div>

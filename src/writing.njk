@@ -10,29 +10,24 @@ description: Content goes here
     <div class='wave -two'></div>
     <div class='wave -three'></div>
 </div> #}
-> [404 page test](nolinkhere)
-
+{# > [404 page test](nolinkhere) #}
 
 I like to write.
 
 <div class="irevamp-container">
   <div class="irevamp-section slide-up">
-    <h5 style="margin-bottom: 0.6em;">List of entries:</h5>
-    <ul class="">
+    <div class="irevamp-h4 bold600">List of entries:</div>
+    <ul class="irevamp-list-unstyled">
       {%- for page in collections.entry | reverse -%}
-      <li class="irevamp-postlist">
-        <div class="irevamp-postlist__content">
-          <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
-          <p class="irevamp-lead">{{ page.data.description }} |  {{ page.data.date | postDate  }}</p>
-        </div>
-      </li>
+        <li class="irevamp-postlist">
+          <div class="irevamp-postlist__content">
+            <a href="{{ page.url }}" class="irevamp-text bold600">{{ page.data.title }}</a>
+            <span class="irevamp-lead"> • {{ page.data.date | postDate  }}</span>
+            <p class="irevamp-lead">{{ page.data.description }}</p>
+          </div>
+        </li>
       {%- endfor -%}
 
-</ul>
-    {# {%- for entry in collections.entry | reverse -%}
-      <a href="{{ entry.url }}" class="irevamp-card__title bold600">{{ entry.data.title }}</a>
-      <p class="irevamp-lead">{{ entry.data.description }}</p>
-      <p class="irevamp-card__date">{{ entry.data.date | postDate  }}</p>
-    {%- endfor -%} #}
+    </ul>
   </div>
 </div>

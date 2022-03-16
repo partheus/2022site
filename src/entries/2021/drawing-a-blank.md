@@ -1,7 +1,6 @@
 ---
-layout: entry.njk
-title: Drawing A Blank
-description: A short story
+title: Drawing a Blank
+description: A short action story
 date: 2021-10-20
 tags: fiction
 ---
