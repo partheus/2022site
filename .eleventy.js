@@ -35,9 +35,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addPassthroughCopy("./src/favicon.png");
-  eleventyConfig.addPassthroughCopy("./src/oakbranch.png");
-  eleventyConfig.addPassthroughCopy("./src/crane.png");
-  eleventyConfig.addPassthroughCopy("./src/backlit.png");
+  // eleventyConfig.addPassthroughCopy("./src/oakbranch.png");
+  // eleventyConfig.addPassthroughCopy("./src/crane.png");
+  // eleventyConfig.addPassthroughCopy("./src/backlit.png");
 
 
 
