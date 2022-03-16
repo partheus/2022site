@@ -16,7 +16,7 @@ layout: base.njk
   <article class="irevamp-mx-auto">
     {{ content | safe }}
 <hr class="menu-hori"/ >
-    <p class="irevamp-lead">Filed under:  
+    <p class="irevamp-lead" style="padding: 3vh 0;">Filed under:  
     {% for tag in tags %}
         <span class="bold600">
           <a href="/tags/{{ tag }}/" aria-label="Pages tagged with {{tag}}">{{tag}}</a>
