@@ -67,8 +67,8 @@ a:hover {
 
 @keyframes menu-slide-up {
   from {
-    opacity: 0.5;
-    margin-top: 50px;
+    opacity: 0.75;
+    margin-top: 150px;
   }
   to {
     opacity: 1;
@@ -77,7 +77,7 @@ a:hover {
 }
 
 .menu-slide-up {
-  animation: menu-slide-up 0.8s;
+  animation: menu-slide-up 1s ease-in;
 }
 
 // slide in
@@ -121,7 +121,7 @@ a:hover {
 
   /* Animate Background Image */
 
-  -webkit-text-fill-color: transparent;
+  // -webkit-text-fill-color: transparent;
   -webkit-animation: backlitanim 45s linear infinite;
   animation: backlitanim 45s linear infinite;
   /* Activate hardware acceleration for smoother animations */
