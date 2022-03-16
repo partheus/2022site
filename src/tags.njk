@@ -1,0 +1,34 @@
+---
+layout: "base.njk"
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+permalink: /tags/{{ tag }}/
+---
+<p class="irevamp-lead">Here are all articles tagged “{{ tag }}.” </p>
+<ul>
+    {% set taglist = collections[tag] | reverse %}
+    {% for post in taglist %}
+        <li>
+            <a href="{{ post.url }}" class="text--larger">{{ post.data.title }}</a>
+            <p>
+                <span>
+                    <span>
+                        {% for tag in post.data.tags %}
+                            {% if tag != 'notes' %}
+                                <span>
+                                    {{tag}}
+                                </span>
+                            {% endif %}
+                        {% endfor %}
+                    </span>
+                </span>
+                <br>
+                {{ post.data.description }}
+            </p>
+        </li>
+    {% endfor %}
+</ul>

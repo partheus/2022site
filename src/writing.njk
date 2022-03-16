@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: page.njk
 templateEngineOverride: md, njk
 title: Writing
 description: Content goes here
@@ -16,7 +16,7 @@ description: Content goes here
   <div class="irevamp-section slide-up">
     <h5 style="margin-bottom: 0.6em;">Posts:</h5>
     <ul class="irevamp-column-container">
-      {%- for page in collections.pages | reverse -%}
+      {# {%- for page in collections.pages | reverse -%}
       <li class="irevamp-card">
         <div class="irevamp-card__content">
           <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
@@ -24,7 +24,13 @@ description: Content goes here
           <p class="irevamp-card__date">{{ page.data.date | postDate  }}</p>
         </div>
       </li>
-      {%- endfor -%}
-    </ul>
+      {%- endfor -%} #}
+
+</ul>
+    {%- for entry in collections.entry | reverse -%}
+      <a href="{{ entry.url }}" class="irevamp-card__title bold600">{{ entry.data.title }}</a>
+      <p class="irevamp-lead">{{ entry.data.description }}</p>
+      <p class="irevamp-card__date">{{ entry.data.date | postDate  }}</p>
+    {%- endfor -%}
   </div>
-  </div>
+</div>
