@@ -10,6 +10,9 @@ $screen-md-max: 1279px;
 $screen-lg-max: 1919px;
 $screen-xl-max: 5000px;
 
+$screen-xxs-min: 320px;
+$screen-xxs-max: 425px;
+
 
 // Shorthand
 
@@ -30,6 +33,13 @@ $screen-xl-max: 5000px;
 // gt-lg 	'screen and (min-width: 1920px)'
 
 // media devices
+@mixin xxs {
+  @media screen and (min-width: #{$screen-xxs-min}) and (max-width: #{$screen-xxs-max}) {
+    @content;
+  }
+}
+
+
 @mixin xs {
   @media screen and (max-width: #{$screen-xs-max}) {
     @content;

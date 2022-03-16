@@ -2,21 +2,27 @@
 
 <nav aria-labelledby="irevamp-siteid" class="irevamp-sitenav">
   <div class="irevamp-sitenav__container">
-    <a id="irevamp-siteid" href="/"
+    <a  id="irevamp-siteid" href="/"
     {% if currentUrl === '/' %}aria-current="page"{% endif %}
-    ><img class="headerhome" src="{{ '/favicon.png' | url }}"></a>
+     style="background:none;"><img class="headerhome" src="{{ '/favicon.png' | url }}"></a>
     <ul role="list" class="irevamp-sitenav__navlist irevamp-list-unstyled">
-      <li><a class="underline homeclass" href="/">Home</a></li>
-      <li><a class="underline" href="/writing">Writing</a></li>
-      <li><a class="underline" href="/art">Art</a></li>
-      <li><a class="underline" href="/about">About</a></li>
+      <li>
+        <a class="underline homeclass" href="/">Home</a>
+      </li>
+      <li>
+        <a class="underline" href="/writing">Writing</a>
+      </li>
+      <li>
+        <a class="underline" href="/art">Art</a>
+      </li>
+      <li>
+        <a class="underline" href="/about">About</a>
+      </li>
     </ul>
-    </div>
+  </div>
 </nav>
 
-
-
-      {# {% for link in collections.pages %}
+{# {% for link in collections.pages %}
       <li>
         <a
           {% if currentUrl === link.url %}aria-current="page"{% endif %}
