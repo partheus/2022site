@@ -87,8 +87,6 @@
 
 .crane {
   max-height: 30vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
   transition: all 1s ease;
   filter: hue-rotate(0);
 
