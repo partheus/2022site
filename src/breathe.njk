@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Breathe
+description: Quick little breather animation for myself
+---
+  <div class="irevamp-container  slide-up">
+    <h1 class="irevamp-content-maxlength irevamp-mx-auto irevamp-ink--primary irevamp-mb-none bold600">{{ title }}</h1>
+    {% if description %}
+    <h5 class="irevamp-content-maxlength irevamp-ink--gray irevamp-mt-sm irevamp-mx-auto irevamp-description">
+     {{ description }}
+    </h5>
+    {% endif %}
+  </div>
+  <div class="breather-box">
+    <div class="breather-box__top">INHALE</div>
+    <div class="breather-box__right">HOLD</div>
+    <div class="breather-box__bottom">EXHALE</div>
+    <div class="breather-box__left">HOLD</div>
+    <div class="breather-box__dot"></div>
+  </div>

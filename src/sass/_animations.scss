@@ -112,6 +112,90 @@ a:hover {
   }
 }
 
+// breather
+
+.breather-box {
+  position: relative;
+  box-sizing: border-box;
+  width: 249px;
+  height: 249px;
+  background: transparent;
+  border: 1px solid $irevamp-color-primary;
+  margin: 6vh auto;
+  padding: 25px;
+  font-family: $irevamp-font-family-primary;
+  font-size: $irevamp-text-font-size;
+}
+
+.breather-box {
+  &__top,
+  &__right,
+  &__bottom,
+  &__left {
+    position: absolute;
+    font-weight: 700;
+  }
+
+  &__top {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__right {
+    top: 50%;
+    right: -54px;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  &__bottom {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__left {
+    top: 50%;
+    left: -54px;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+  &__dot {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: #ffff00;
+    border-radius: 50%;
+    animation: dot-animation #{4 * 4}s infinite;
+    animation-timing-function: cubic-bezier(0.57, 0.31, 0.8, 0.62);
+  }
+}
+
+@keyframes dot-animation {
+  0% {
+    top: -12px;
+    left: -10px;
+  }
+  25% {
+    top: -12px;
+    left: 237px;
+  }
+  50% {
+    top: 236px;
+    left: 237px;
+  }
+  75% {
+    top: 236px;
+    left: -10px;
+  }
+  100% {
+    top: -12px;
+    left: -10px;
+  }
+}
+
 //  background clip
 
 .backlit {
