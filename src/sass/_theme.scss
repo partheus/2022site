@@ -5,6 +5,23 @@ $irevamp-color-background: #170808 !default;
 
 $hover-font-bg: #3d052f81 !default;
 $hover-font: #25021d !default;
+// work on this
+html[data-theme='dark'] {
+  $irevamp-color-primary: #170808 !default;
+  $irevamp-color-secondary: #e23f93 !default;
+  $irevamp-color-secondary-light: #EB89BC !default;
+  $irevamp-color-background: #fff2e5 !default;
+}
+
+&__light {
+  --high-contrast-bg: hsl(194, 2%, 93%);
+  --high-contrast-text: hsl(194, 2%, 28%);
+}
+&__dark {
+  --high-contrast-bg: hsl(194, 2%, 48%);
+  --high-contrast-text: hsl(194, 2%, 98%);
+}
+
 
 $irevamp-brand-colors: (
   "primary": $irevamp-color-primary,
