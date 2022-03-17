@@ -22,7 +22,7 @@ I like to write. Find my [published works here](). As a former columnist for the
   <div class="irevamp-section slide-up">
     <div class="irevamp-h5 irevamp-mb-md bold600">See a few of my latest entries:</div>
     <ul class="irevamp-list-unstyled">
-      {%- for post in pagination.items | reverse -%}
+      {%- for post in pagination.items -%}
         <li class="irevamp-postlist__content">
             <a href="{{ post.url }}" class="irevamp-text">{{ post.data.title }}</a>
             <p style="margin-top: 5px" class="irevamp-lead">{{ post.data.date | postDate  }} {% if post.data.description %} • {{ post.data.description }}{% endif %}
