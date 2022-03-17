@@ -266,8 +266,8 @@ blockquote {
   margin: 1.25rem auto;
 
   .irevamp-text {
-    @include gt-sm {
-      font-size: 110%;
+    @include gt-md {
+      font-size: 105%;
     }
   }
 }
