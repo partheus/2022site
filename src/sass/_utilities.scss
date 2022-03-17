@@ -61,6 +61,10 @@ $irevamp-alignments: left, center, right !default;
   .irevamp-mt-#{$key} {
     margin-top: $unit;
   }
+
+  .irevamp-mb-#{$key} {
+    margin-bottom: $unit;
+  }
 }
 
 .irevamp-mb-none {
