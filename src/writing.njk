@@ -2,6 +2,11 @@
 layout: page.njk
 templateEngineOverride: md, njk
 title: Writing
+pagination:
+  data: collections.entry
+  size: 5
+  alias: entries
+  reverse: true
 ---
 
 {# <div class='box'>
@@ -11,22 +16,22 @@ title: Writing
 </div> #}
 {# > [404 page test](nolinkhere) #}
 
-I like to write.
+I like to write. Find my [published works here](). As a former columnist for the Iowa State Daily, I have written copious amounts of polarizing nonsense. These [columns can be found here]().
 
-<div class="irevamp-container">
+<div class="irevamp-container irevamp-mt-md">
   <div class="irevamp-section slide-up">
-    <div class="irevamp-h4 bold600">List of entries:</div>
+    <div class="irevamp-h5 irevamp-mb-md bold600">A few of my latest entries:</div>
     <ul class="irevamp-list-unstyled">
-      {%- for page in collections.entry | reverse -%}
+      {%- for page in pagination.items -%}
         <li class="irevamp-postlist">
           <div class="irevamp-postlist__content">
-            <a href="{{ page.url }}" class="irevamp-text bold600">{{ page.data.title }}</a>
-            <span class="irevamp-lead"> • {{ page.data.date | postDate  }}</span>
-            <p class="irevamp-lead">{{ page.data.description }}</p>
+            <a href="{{ page.url }}" class="irevamp-text">{{ page.data.title }}</a>
+            <p class="irevamp-lead">{{ page.data.date | postDate  }} {% if page.data.description %} • {{ page.data.description }}</p>{% endif %}
           </div>
         </li>
       {%- endfor -%}
-
     </ul>
+        <div class="irevamp-h5 irevamp-mt-md bold600">Or <a href="/entries">read them all here.</a></div>
+
   </div>
 </div>

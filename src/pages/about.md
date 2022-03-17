@@ -5,15 +5,18 @@ date: 2022-03-10
 ---
 I'm a web developer, documentation specialist, business analyst, a few other adjectives and nouns, retired knight of the Round Table, close confidante of Merlin, freelance worldsaver, etc. etc.
 
-Welcome to my website.
+Welcome to the site. This online project will act as a portfolio / journal for my unusually frequent adventures.
 
-Hehe TEXT CONTENT
+< This page was built using the `base // page` layout / >
 
+
+<div class="irevamp-mt-md irevamp-mb-md ">
 {% include 'goodreads.html' %}
+</div>
 
-##### This is my website.
+This is my website.
 > There are many like it,
-##### BUT
-> This one is mine.
+
+> But this one is mine.
 
 

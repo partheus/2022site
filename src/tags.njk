@@ -17,18 +17,7 @@ title: Tagged content
             {% for post in taglist %}
                 <li class="irevamp-postlist__content">
                     <a href="{{ post.url }}" class="irevamp-text">{{ post.data.title }}</a>
-                    <p>
-                        <span class="irevamp-lead">
-
-                            <span class="irevamp-lead">{{ post.data.description }} • {{ post.data.date | postDate  }}
-                                {# {% for tag in post.data.tags %}
-                                    {% if tag != 'entry' %}
-                                        <span>• tagged: {{tag}}</span>
-                                    {% endif %}
-                                {% endfor %} #}
-                            </span>
-                        </span>
-                    </p>
+            <p style="margin-top: 5px" class="irevamp-lead">{{ post.data.date | postDate  }} {% if post.data.description %} • {{ post.data.description }}</p>{% endif %}
                 </li>
             {% endfor %}
         </ul>
