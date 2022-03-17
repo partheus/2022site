@@ -190,13 +190,13 @@ a:not(.irevamp-button) {
 
 code:not([class*="language"]) {
   display: inline-flex;
-  padding: 0.15em;
-  background-color: irevamp-color("light");
-  color: irevamp-color("gray");
+  padding: 0.25em;
+  background-color: irevamp-color("secondary");
+  color: irevamp-color("dark");
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   border: 1px solid scale-color(irevamp-color("gray"), $lightness: 50%);
   border-radius: 2px;
-  font-size: 0.75em;
+  font-size: 1em;
   line-height: 1.1;
 }
 
