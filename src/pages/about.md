@@ -7,16 +7,12 @@ I'm a web developer, documentation specialist, business analyst, a few other adj
 
 Welcome to the site. This online project will act as a portfolio / journal for my unusually frequent adventures.
 
-< This page was built using the `base // page` layout / >
-
+<div class="irevamp-h4 bold600"><a href="/hello">Contact me to say hi!</a></div>
 
 <div class="irevamp-mt-md irevamp-mb-md ">
 {% include 'goodreads.html' %}
 </div>
 
-This is my website.
-> There are many like it,
 
-> But this one is mine.
-
+> This page was built using the `base` layout
 
