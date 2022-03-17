@@ -35,11 +35,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addPassthroughCopy("./src/favicons");
-  // eleventyConfig.addPassthroughCopy("./src/oakbranch.png");
-  // eleventyConfig.addPassthroughCopy("./src/crane.png");
-  // eleventyConfig.addPassthroughCopy("./src/backlit.png");
-
-
+  eleventyConfig.addPassthroughCopy("./src/admin");
 
 
   eleventyConfig.setBrowserSyncConfig({
