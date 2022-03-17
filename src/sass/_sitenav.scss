@@ -10,9 +10,8 @@
 .headerhome {
   max-width: 50px;
   width: fit-content;
-  transition: all ease-in-out 0.3s;
   position: relative;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: hue-rotate(0deg);
 
   @include xxs {
@@ -26,10 +25,14 @@
   @include gt-sm {
     max-width: 70px;
   }
+
+  @include gt-md {
+    max-width: 80px;
+  }
 }
 
 .headerhome:hover {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   filter: hue-rotate(222deg);
 }
 
