@@ -12,6 +12,7 @@ title: Tagged content
 <div class="irevamp-hero">
 <h3 style="margin-bottom: 0.6em;" class="bold600">Here are all articles tagged “{{ tag }}”:</h3>
 </div>
+<main class="irevamp-container">
 <div class="irevamp-section slide-up">
     <ul class="irevamp-list-unstyled irevamp-postlist">
         {% set taglist = collections[tag] | reverse %}
@@ -28,3 +29,4 @@ title: Tagged content
 
     <div class="irevamp-h5 irevamp-mt-md bold600">Go back to <a href="/entries">all entries</a>.  Or visit <a href="/writing">the writing section</a> again.</div>
 </div>
+</main>
