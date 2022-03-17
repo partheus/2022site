@@ -17,10 +17,11 @@ title: Tagged content
             {% for post in taglist %}
                 <li class="irevamp-postlist__content">
                     <a href="{{ post.url }}" class="irevamp-text">{{ post.data.title }}</a>
-            <p style="margin-top: 5px" class="irevamp-lead">{{ post.data.date | postDate  }} {% if post.data.description %} • {{ post.data.description }}</p>{% endif %}
+                    <p style="margin-top: 5px" class="irevamp-lead">{{ post.data.date | postDate  }} {% if post.data.description %} • {{ post.data.description }}{% endif %}</p>
                 </li>
             {% endfor %}
         </ul>
 
+        <div class="irevamp-h5 irevamp-mt-xl bold600">Go back to <a href="/entries">all entries</a>.  Or visit <a href="/writing">the writing section</a> again.</div>
     </div>
 </div>
