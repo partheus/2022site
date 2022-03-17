@@ -20,15 +20,15 @@ I like to write. Find my [published works here](). As a former columnist for the
 
 <div class="irevamp-container irevamp-mt-md">
   <div class="irevamp-section slide-up">
-    <div class="irevamp-h5 irevamp-mb-md bold600">A few of my latest entries:</div>
+    <div class="irevamp-h5 irevamp-mb-md bold600">See a few of my latest entries:</div>
     <ul class="irevamp-list-unstyled">
-      {%- for page in pagination.items -%}
-        <li class="irevamp-postlist">
-          <div class="irevamp-postlist__content">
-            <a href="{{ page.url }}" class="irevamp-text">{{ page.data.title }}</a>
-            <p class="irevamp-lead">{{ page.data.date | postDate  }} {% if page.data.description %} • {{ page.data.description }}{% endif %}<span class="irevamp-lead irevamp-ink--secondary">{% for tag in page.data.tags.slice(1, 3) %}{% if tag != 'notes' %}<span> • {{tag}}</span>{% endif %}{% endfor %}</p>
-          </div>
+      {%- for post in pagination.items | reverse -%}
+        <li class="irevamp-postlist__content">
+            <a href="{{ post.url }}" class="irevamp-text">{{ post.data.title }}</a>
+            <p style="margin-top: 5px" class="irevamp-lead">{{ post.data.date | postDate  }} {% if post.data.description %} • {{ post.data.description }}{% endif %}
+        {% if post.data.tags %}<span class="irevamp-lead irevamp-ink--secondary"> 🏷 {% for tag in post.data.tags.slice(1, 3) %}{% if tag != 'notes' %}<span>{{tag}} </span>{% endif %}{% endfor %}{% endif %}</p>
         </li>
+    </span>
       {%- endfor -%}
     </ul>
         <div class="irevamp-h5 irevamp-mt-md bold600">Or <a href="/entries">view them all here ({{ collections.entry | length }})</a>.</div>
