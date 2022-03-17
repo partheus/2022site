@@ -2,9 +2,9 @@
 title: Ricochet
 date: 2016-12-11
 tags: ["film", "fanfic"]
-description:  A Normal Night in Paris
+description:  A normal night in Paris
 ---
-<div class="irevamp-text aftercringe">Written in 2016</div>
+<blockquote class="blockquote-lilac aftercringe">Written in 2016</blockquote>
 
 The moment I saw the van pull up outside the cafe, I knew something was wrong. It was eleven p.m., and at this time of the night, Paris tended to get somewhat woeful. And I had taken just a sip of my black coffee, which, I might add, was possibly one of the best coffees I’ve ever sipped at. With another long drink, my gaze drifted back at the cafe. The staff was packing up; indeed, it was pretty gracious of them to let me stay this late. The waitress walked up to me just as the van pulled to a halt a dozen meters away and smiled wearily.
 

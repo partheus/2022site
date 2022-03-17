@@ -271,3 +271,13 @@ blockquote {
     }
   }
 }
+
+.aftercringe:hover {
+  content: '';
+  cursor: wait;
+}
+  .aftercringe:hover::after {
+    content: "😓😞";
+    display: inline-block;
+    
+  }
