@@ -7,7 +7,9 @@ I'm a web developer, documentation specialist, business analyst, a few other adj
 
 Welcome to the site. This online project will act as a portfolio / journal for my unusually frequent adventures.
 
-<div class="irevamp-h4 bold600"><a href="/hello">Contact me to say hi!</a></div>
+Check out my [writing](/writing), or some of my [art](/art).
+
+Or <span class="bold600"><a href="/hello">contact me to say hi!</a></span>
 
 <div class="irevamp-mt-md irevamp-mb-md ">
 {% include 'goodreads.html' %}
