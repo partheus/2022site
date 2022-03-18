@@ -317,25 +317,33 @@ blockquote {
 }
 
 .works-bg {
-  background-color: beige;
+  background-color: #2b2020;
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  padding: 0.5em;
   justify-items: center;
   border-radius: 5px;
   align-items: center;
   row-gap: 3em;
+
+  @include gt-sm {
+    padding: 3em;
+  }
 }
 
 .works-item a {
   border: 3px dashed $irevamp-color-secondary-light;
-  padding: 1em;
+  border-radius: 2px;
+  padding: 1.75em;
+  background-color: $irevamp-color-background;
   background: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background-color 0.3s ease-in-out;
 
   @include gt-sm {
+    padding: 1em;
     align-items: flex-start;
     flex-direction: row;
   }
@@ -344,12 +352,11 @@ blockquote {
 .works-cover {
   -webkit-box-shadow: -2px 8px 15px -4px $irevamp-color-background;
   box-shadow: -2px 8px 15px -4px $irevamp-color-background;
-  transition: all ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out;
+  background-color: bisque;
 
   @include lt-md {
-    // height: 10em;
-    // width: auto;
-    max-width: 75%;
+    max-width: 65%;
     justify-self: center;
   }
 
@@ -358,18 +365,17 @@ blockquote {
   }
 }
 
-.works-item:hover,
-.works-cover:hover {
+.works-item:hover {
   cursor: pointer;
-  .works-cover {
-    -webkit-box-shadow: -2px 8px 20px 1px $irevamp-color-background;
-    box-shadow: -2px 8px 20px 1px $irevamp-color-background;
-    transition: all ease-in-out 0.2s;
-  }
+  background-color: rgb(221, 221, 201);
+  transition: background-color 0.2s ease-in-out;
+  .works-about {
+  color: $irevamp-color-background;
+}
 }
 
 .works-about {
-  color: $irevamp-color-background;
+  color: $irevamp-color-primary;
   font-size: $irevamp-lead-font-size;
   font-weight: 400;
 
