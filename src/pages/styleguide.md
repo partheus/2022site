@@ -8,7 +8,7 @@ date: 2022-03-11
 
 Text: **Bold**, _Italic_, or ~~Strikethrough~~.
 
-[Link](/about).
+[Test link. Visit website colophon](/colophon).
 
 ## Header 2
 
@@ -74,14 +74,26 @@ var fun = function lang(l) {
 <div class="irevamp-section slide-up">
     <h5>Test 3-Up Cards:</h5>
     <ul class="irevamp-column-container">
-      {%- for page in collections.pages | reverse -%}
       <li class="irevamp-card">
         <div class="irevamp-card__content">
-          <a href="{{ page.url }}" class="irevamp-card__title bold600">{{ page.data.title }}</a>
-          <p class="irevamp-lead">{{ page.data.description }}</p>
-          <p class="irevamp-card__date">{{ page.data.date | postDate  }}</p>
+          <a href="#" class="irevamp-card__title bold600">Test Title</a>
+          <p class="irevamp-lead">Test description</p>
+          <p class="irevamp-card__date">03-17-22</p>
         </div>
       </li>
-      {%- endfor -%}
+            <li class="irevamp-card">
+        <div class="irevamp-card__content">
+          <a href="#" class="irevamp-card__title bold600">Test Title</a>
+          <p class="irevamp-lead">Test description</p>
+          <p class="irevamp-card__date">03-17-22</p>
+        </div>
+      </li>
+            <li class="irevamp-card">
+        <div class="irevamp-card__content">
+          <a href="#" class="irevamp-card__title">Test Title</a>
+          <p class="irevamp-lead">Test description</p>
+          <p class="irevamp-card__date">03-17-22</p>
+        </div>
+      </li>
     </ul>
 </div>
