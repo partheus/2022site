@@ -34,8 +34,6 @@ $irevamp-typography-variants: h1, h2, h3, h4, h5;
 
 .hello {
   text-align: left;
-  border-bottom: 1px solid #fff2e586;
-  padding-bottom: 10rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 
@@ -286,5 +284,5 @@ blockquote {
 }
 
 .afterhidden:hover::before {
-  content: "fight for the user";
+  content: "fight for the users";
 }
