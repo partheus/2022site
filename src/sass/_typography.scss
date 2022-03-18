@@ -300,7 +300,6 @@ blockquote {
   @include gt-sm {
     height: 72px;
   }
-
 }
 
 .music-recco-about {
@@ -315,4 +314,58 @@ blockquote {
 
 .music-recco-title a:hover {
   color: $irevamp-color-secondary;
+}
+
+.works-bg {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  row-gap: 2em;
+}
+
+.works-item a {
+  background: none;
+  display: flex;
+  margin-bottom: 2em;
+  flex-direction: column;
+
+  @include gt-sm {
+    flex-direction: row;
+  }
+}
+
+.works-cover {
+  box-shadow: none;
+  transition: all ease-in-out 0.3s;
+  @include gt-sm {
+    height: 15em;
+  }
+}
+
+.works-item:hover,
+.works-cover:hover {
+  cursor: pointer;
+  .works-cover {
+    -webkit-box-shadow: -2px 8px 15px -6px $irevamp-color-background;
+    box-shadow: -2px 8px 15px -6px $irevamp-color-background;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+.works-about {
+  color: $irevamp-color-background;
+  font-size: $irevamp-lead-font-size;
+  font-weight: 400;
+  padding-left: 1em;
+  margin-top: 1em;
+  border-bottom: 1px solid $irevamp-color-secondary-light;
+
+  @include gt-sm {
+    margin-top: 0;
+    border-bottom: 0;
+  }
 }
