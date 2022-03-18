@@ -7,9 +7,8 @@ I'm a web developer, documentation specialist, business analyst, a few other adj
 
 Having received my Master's degree in 2021, I have worked in the industry as a web designer and front-end developer. Every year or so since 2017, my domain `parth.ninja` points to a fresh redesign of this personal website. As of now, this online project will act as a portfolio / journal for my unusually frequent adventures.
 
-I'm currently located in Portland, OR.
+I'm obsessed with audiobooks, as evidenced by my weekly checkouts at the Multnomah County Central Library. I live in Portland, OR, and work with a wonderful design studio as a frontend developer. View my [code](/code).
 
-  Like most delicious recipes and dishes, I believe websites are made by carefully choosing a few simple ingredients and preparing them with great gusto. For a quick summary, take a look at this [portfolio gallery of my latest projects](/menu) disguised as a restaurant menu card.
 
 Check out my [writing](/writing), or some of my [art](/art). Read my [climbing]() logs.
 
