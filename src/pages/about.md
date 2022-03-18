@@ -10,7 +10,7 @@ Having received my Master's degree in 2021, I have worked in the industry as a w
 I'm obsessed with audiobooks, as evidenced by my weekly checkouts at the Multnomah County Central Library. I live in Portland, OR, and work with a wonderful design studio as a frontend developer. View my [code](/code).
 
 
-Check out my [writing](/writing), or some of my [art](/art). Read my [climbing]() logs.
+Check out my [writing](/writing), or some of my [art](/art). Better yet, read my [climbing](/climbing) logs.
 
 Or <span class="bold600"><a href="/hello">contact me to say hi</a></span>!
 
