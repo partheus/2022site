@@ -23,11 +23,16 @@ templateEngineOverride: md, njk
 </blockquote>
 
 > Check out the [styleguide](/styleguide) for this site
+
+
+<div class="irevamp-section">
+<div class="irevamp-h5 irevamp-mt-md bold600">Now Playing</div>
+{% include "songs.njk" %}
+</div>
 </div>
 </div>
 
 </header>
-
 <main class="irevamp-container">
-  {{ content | safe }}
+{{ content | safe }}
 </main>

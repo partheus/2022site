@@ -286,3 +286,33 @@ blockquote {
 .afterhidden:hover::before {
   content: "fight for the users";
 }
+
+.music-recco {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+.music-recco-icon {
+  height: 54px;
+  @include gt-sm {
+    height: 72px;
+  }
+
+}
+
+.music-recco-about {
+  padding-left: 1em;
+}
+
+.music-recco-title a {
+  color: $irevamp-color-secondary;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.music-recco-title a:hover {
+  color: $irevamp-color-secondary;
+}
