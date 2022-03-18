@@ -13,7 +13,7 @@
   transition-property: background, border;
   border-radius: math.div($irevamp-border-radius, 2);
   background-color: irevamp-color("primary");
-  color: #fff;
+  color: $irevamp-color-background;
   font-size: 1.125rem;
   line-height: 1.1;
   text-align: center;
@@ -21,7 +21,7 @@
   cursor: pointer;
 
   @media screen and (-ms-high-contrast: active) {
-    border: 2px solid currentColor;
+    border: 2px solid $irevamp-color-secondary;
   }
 
   &:focus {

@@ -5,7 +5,7 @@ description: "Talk to me about stuff, or say hello, or send me samples to flip"
 > This form is currently disabled. Email me at **parth [dot] shiralkar [at] gmail [dot] com**
 
 <form name="contact" class="form" method="POST" data-netlify="true" action="/">
-<fieldset style="border:0;padding:0;"  	disabled>
+<fieldset style="border:0;padding:0;" disabled>
 <legend class="sr-only">Information, comments, feedback</legend>
   <div class="form_item">
     <label disabled>Your Name <input type="text" name="name" title="i am required" class="form_field" aria-required="true" required/></label>   
@@ -18,7 +18,7 @@ description: "Talk to me about stuff, or say hello, or send me samples to flip"
   </div>
 
   <div class="form_item">
-    <button type="submit" class="bold600 uppercase">Send</button>
+  <button type="submit" class="irevamp-mx-auto irevamp-button bold600 uppercase">Send</button>
   </div> 
     </fieldset>
 </form>
