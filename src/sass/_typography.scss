@@ -273,11 +273,18 @@ blockquote {
 }
 
 .aftercringe:hover {
-  content: '';
+  content: "";
   cursor: wait;
 }
-  .aftercringe:hover::after {
-    content: "😓😞";
-    display: inline-block;
-    
-  }
+.aftercringe:hover::after {
+  content: "😓😞";
+  display: inline-block;
+}
+
+.afterhidden::before {
+  content: "build for the web";
+}
+
+.afterhidden:hover::before {
+  content: "fight for the user";
+}
