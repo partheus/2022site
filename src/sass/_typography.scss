@@ -279,11 +279,15 @@ blockquote {
   display: inline-block;
 }
 
-.afterhidden::before {
+.tronafterhidden::before {
   content: "build for the web";
 }
 
-.afterhidden:hover::before {
+.tronafterhidden:hover {
+  cursor: url(/img/tron.png), auto;
+}
+
+.tronafterhidden:hover::before {
   content: "fight for the users";
 }
 
