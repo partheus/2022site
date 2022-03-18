@@ -1,4 +1,5 @@
 @use "theme" as *;
+@use "media-queries" as *;
 
 // Overall hyperlink styles
 a {
@@ -37,13 +38,13 @@ a:hover {
   height: 3em;
 
   span {
-    width: 7.5px;
+    width: 5px;
     height: 100%;
     background-color: $irevamp-color-secondary-light;
     border-radius: 2px;
     content: '';
     animation: bounce 2.4s ease infinite alternate;
-    
+   
     &:nth-of-type(2) {
       animation-delay: -2.2s; /* Start at the end of animation */
       background-color: $irevamp-color-secondary;
@@ -53,6 +54,11 @@ a:hover {
       animation-delay: -3.7s; /* Start mid-way of return of animation */
       background-color: #8dd5ff;
     }
+  
+    @include gt-xs {
+      width: 7px;
+    }
+  
   }
 
   .music-bars:hover {
