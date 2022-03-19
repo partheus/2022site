@@ -389,3 +389,44 @@ blockquote {
     margin-top: 0;
   }
 }
+
+.swatch {
+    position: relative;
+    width: 100%;
+    padding: 0.25em;
+    align-items: center;
+  }
+
+  .swatch-box {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+    font-size: $irevamp-text-font-size;
+    align-items: center;
+    font-weight: 400;
+    text-transform: lowercase;
+    width: 65vw;
+  }
+  
+  .background-bg {
+    color: $irevamp-color-primary;
+    background-color: $irevamp-color-background;
+  }
+  
+  .primary-bg {
+    background-color: $irevamp-color-primary;
+  }
+  
+  .secondary-bg {
+    background-color: $irevamp-color-secondary;
+  }
+
+  .secondary-light-bg {
+    background-color: $irevamp-color-secondary-light;
+  }
+
+  .lilac-bg{
+    background-color: #8dd5ff;
+  }
