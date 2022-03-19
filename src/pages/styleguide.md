@@ -8,7 +8,7 @@ date: 2022-03-11
 
 Text: **Bold**, _Italic_, or ~~Strikethrough~~.
 
-[Test link. Visit website colophon](/colophon).
+[Test link](/colophon).
 
 ## Header 2
 
