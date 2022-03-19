@@ -1,14 +1,14 @@
 ---
 title: "Styleguide"
-description: 'A simple text styleguide for layout and UI practice'
-date: 2022-03-11
+description: 'A simple text styleguide for layout and UI practice. Includes base styles that are applied across the site.'
+date: Last modified
 ---
 
 # Header 1
 
 Text: **Bold**, _Italic_, or ~~Strikethrough~~.
 
-[Test link](/colophon).
+[Test link](/colophon) (redirects to colophon).
 
 ## Header 2
 
