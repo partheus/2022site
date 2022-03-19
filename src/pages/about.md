@@ -12,7 +12,7 @@ View [more about this site](/colophon).
 I'm extremely partial to audiobooks, as evidenced by my [weekly checkouts](https://www.goodreads.com/review/list/60162168-parth-shiralkar?shelf=audiobook) at the Multnomah County Central Library. I live in Portland, OR, and work with a wonderful design studio as a frontend developer. View my [code, work](/code).
 
 
-Check out my [writing](/writing), or some of my [art](/art). Or read about my [climbing](/climbing) exploits.
+Check out my [writing](/writing), or some of my [art](/art). Or read about my [climbing exploits](/climbing).
 
 Or <span class="bold600"><a href="/hello">contact me to say hi</a></span>!
 
