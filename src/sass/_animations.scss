@@ -351,6 +351,24 @@ a:hover {
   }
 }
 
+// background gradient
+.bg-gradient {
+  background: linear-gradient(-45deg, #000000, #005011, #3F0071, #6d001f);
+  background-size: 400% 400%;  animation: bg-gradient 15s ease infinite;
+}
+
+@keyframes bg-gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 /* LOADING SPACE */
 
 .contain {
