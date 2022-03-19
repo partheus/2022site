@@ -78,11 +78,15 @@
     }
 
     p, li > a {
-      font-size: $irevamp-text-font-size;
+      font-size: $irevamp-mini-font-size;
       text-decoration: none;
       font-family: $irevamp-font-family-primary;
       letter-spacing: 0;
       font-weight: 400;
+
+      @include gt-xs {
+        font-size: $irevamp-text-font-size;
+      }
 
       @include gt-sm {
         font-size: $irevamp-lead-font-size;
