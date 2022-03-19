@@ -77,7 +77,7 @@
       }
     }
 
-    li > a {
+    p, li > a {
       font-size: $irevamp-mini-font-size;
       text-decoration: none;
       font-family: $irevamp-font-family-primary;
@@ -89,12 +89,13 @@
       }
     }
   }
-  &__footer {
-    @include lt-md {
-      justify-content: right;
-      line-height: 2;
-      margin-left: 0;
-    }
+}
+.irevamp-sitenav__footer {
+  @include lt-md {
+    justify-content: right;
+    line-height: 2;
+    margin-left: 0;
   }
 }
+
 // stylelint-enable
