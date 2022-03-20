@@ -14,7 +14,7 @@ I'm extremely partial to audiobooks, as evidenced by my [weekly checkouts](https
 
 Check out my [writing](/writing), or some of my [art](/art). Or read about my [climbing exploits](/climbing).
 
-Or <span class="bold600"><a href="/hello">contact me to say hi</a></span>!
+> <span class="bold600"><a href="/hello">Contact me to say hi</a></span>!
 
 
 <div class="irevamp-h5 irevamp-mt-md bold600">Now Playing</div>

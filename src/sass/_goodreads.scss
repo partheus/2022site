@@ -4,7 +4,14 @@
 .goodreads {
     background-color: #312020;
     margin-bottom: 5vh;
-    border-radius: 9px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: -2px 8px 15px -4px black;
+
+    @include gt-sm {
+      max-width: 60%;
+    }
 }
 
 #gr_grid_widget_1647304638 {

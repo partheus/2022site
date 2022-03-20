@@ -22,16 +22,6 @@ $irevamp-typography-variants: h1, h2, h3, h4, h5;
   font-weight: 300;
 }
 
-.intro-about {
-  margin-top: $irevamp-h2-font-size;
-  font-size: 16px;
-  font-weight: 400;
-
-  @include gt-sm {
-    font-size: 18px;
-  }
-}
-
 .hello {
   text-align: left;
   padding-left: 0.75rem;
@@ -39,6 +29,11 @@ $irevamp-typography-variants: h1, h2, h3, h4, h5;
 
   @include lt-sm {
     padding: inherit 0;
+  }
+
+  @include gt-sm {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   @include gt-md {
@@ -116,11 +111,7 @@ h5,
 
 p,
 li {
-  font-size: $irevamp-text-font-size;
-
-  @include gt-sm {
-    font-size: $irevamp-lead-font-size;
-  }
+  font-size: $irevamp-lead-font-size;
 
   @include gt-md {
     font-size: 24px;
@@ -213,7 +204,7 @@ blockquote {
 
   &,
   p {
-    font-size: $irevamp-text-font-size;
+    font-size: 22px;
   }
 
   + * {
@@ -233,7 +224,6 @@ blockquote {
   font-size: $irevamp-lead-font-size;
   // letter-spacing: 0.01em;
   margin-bottom: 1em;
-  line-height: 1.3;
 }
 
 .irevamp-text {
