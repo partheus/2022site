@@ -6,7 +6,6 @@
     margin-bottom: 5vh;
     border-radius: 10px;
     max-width: 90%;
-    margin: 0 auto;
     box-shadow: -2px 8px 15px -4px black;
 
     @include gt-sm {
@@ -20,19 +19,14 @@
 
 .gr_grid_container {
     /* customize grid container div here. eg: width: 500px; */
-    padding: 0 1em 1.5em;
+    padding: 0 1em;
     display: flex;
     flex-direction: row;
     column-gap: 2em;
     align-items: center;
     justify-content: space-evenly;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.2s;
     flex-wrap: wrap;
-  }
-
-  .gr_grid_container:hover {
-    background-color: #2b1616;
-    transition: all ease-in-out 0.3s;
   }
 
   .gr_grid_book_container {
@@ -40,7 +34,7 @@
     margin: 1em 0;
     overflow: hidden;
     display: flex;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.2s;
     filter: none;
 
     @include gt-sm {
@@ -51,6 +45,6 @@
   .gr_grid_book_container:hover {
     /* customize book cover container div here */
     filter: hue-rotate(66deg);
-    outline: 2px dashed $irevamp-color-primary;
+    outline: 2px dashed $irevamp-color-secondary-light;
     transition: all ease-in-out 0.2s;
   }

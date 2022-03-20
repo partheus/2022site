@@ -17,7 +17,7 @@ Check out my [writing](/writing), or some of my [art](/art). Or read about my [c
 > <span class="bold600"><a href="/hello">Contact me to say hi</a></span>!
 
 
-<div class="irevamp-h5 irevamp-mt-md bold600">Now Playing</div>
+<div class="irevamp-h5 irevamp-mt-lg bold600">Now Playing</div>
 {% include 'songs.njk' %}
 <div class="irevamp-mt-md irevamp-mb-md ">
 {% include 'goodreads.html' %}
